@@ -1,4 +1,166 @@
+@charset "UTF-8";
+/* foundation */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 h1 {
-  font-size: 38px;
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 80px;
+}
+
+/* layout */
+.l-body {
+  width: 100%;
+  height: 1553px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.l-body .l-header {
+  width: 80.885%;
+  background-color: #FFF7EF;
+}
+
+.l-body .l-header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.l-body .l-aside {
+  width: 19.115%;
+  background-color: #F2EDE9;
+}
+
+.l-footer {
+  width: 100%;
+  height: 150px;
+  background-color: #9D8670;
+  position: absolute;
+  bottom: 0;
+}
+
+/* project */
+.p-header-left h1 {
+  position: relative;
+  top: 67px;
+  left: 65px;
+}
+
+.p-header-right {
+  position: relative;
+  top: 86px;
+  right: 397px;
+}
+
+.p-header-choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-header-choice .p-header-takeout {
+  width: 50%;
+}
+
+.p-header-choice .p-header-eatin {
+  width: 50%;
+}
+
+/* component */
+.c-image {
+  width: 100%;
+}
+
+.c-image-top {
+  width: 100%;
+  height: auto;
+}
+
+.c-image-text-top {
+  position: relative;
+  left: 0;
+  top: 235px;
+  left: 86px;
+  font-weight: 64px;
+  color: #ffffff;
+}
+
+.c-image-takeout {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  margin-left: 111px;
+}
+
+.c-image-text-takeout {
+  position: relative;
+  top: 130px;
+  left: 130px;
+  z-index: 100;
+  color: #ffffff;
+}
+
+.c-image-eatin {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  margin-right: 112px;
+}
+
+.c-image-text-eatin {
+  position: relative;
+  top: 130px;
+  right: 0px;
+  z-index: 100;
+  color: #ffffff;
+}
+
+/* 検索フォーム*/
+.c-form {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.c-form-sbox5 {
+  outline: 0;
+  height: 50px;
+  padding: 0 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 270px;
+  border-radius: 2px;
+  background: #eee;
+}
+
+.c-form-sbtn5 {
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  left: 280px;
+  top: 0;
+  border-radius: 2px;
+  background: #7fbfff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+}
+
+.c-form-sbtn5:hover {
+  background: #eee;
+  color: #7fbfff;
 }
 /*# sourceMappingURL=style.css.map */
