@@ -1,5 +1,5 @@
 /* foundation */
-* {box-sizing: border-box;
+* { box-sizing: border-box;
 
 }
 
@@ -8,9 +8,6 @@ h1 {
     font-size: 64px;
 }
 
-h2 {
-    font-size: 80px;
-}
 
 /* layout */
 .l-body {
@@ -39,6 +36,22 @@ h2 {
     bottom: 0;
 }
 
+.l-takeout-text-1 {
+    position: relative;
+    width: 585px;
+    height: 174px;
+}
+.l-takeout-text-2 {
+    position: relative;
+}
+.l-eatin-text-1 {
+    position: relative;
+}
+.l-eatin-text-2 {
+    position: relative;
+}
+
+
 /* project */
 .p-header-left h1{
     position: relative;
@@ -53,6 +66,8 @@ h2 {
 
 .p-header-choice {
     display: flex;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 111px;
     .p-header-takeout {
         width: 50%;
     }
@@ -74,66 +89,82 @@ h2 {
         left: 0;
         top: 235px;
         left: 86px;
-        font-weight: 64px;
+        font-size: 40px;
+        
         color: #ffffff;
     }
     &-takeout {
         box-sizing: border-box;
         width: 100%;
         height: auto;
-        margin-left: 111px;
+        padding-right: 40px;
+
     }
     &-text-takeout {
         position: relative;
         top: 130px;
-        left: 130px;
+        left: 50px;
         z-index: 100;
         color: #ffffff;
+        font-size: 80px;
+        line-height: 1.325;
     }
     &-eatin {
         box-sizing: border-box;
         width: 100%;
         height: auto;
-        margin-right: 112px;
+        padding-left: 40px;
     }
     &-text-eatin {
         position: relative;
         top: 130px;
-        right: 0px;
+        left: 80px;
         z-index: 100;
         color: #ffffff;
+        font-size: 80px;
+        line-height: 1.325;
     }
+
+.c-text-heading {
+    background-color: #ffffff;
+     h3 {
+         font-size: 24px;
+     }
+     p {
+         font-size: 16px;
+     }
+}
     
 }
 
 /* 検索フォーム*/
 .c-form{
-    position:relative; 
-    margin-bottom:20px;	
+    position: relative; 
+    margin-bottom:  20px;	
     
     &-sbox5{	
-            outline:0;	
-            height:50px;
-            padding:0 10px; 
-            position:absolute; 
-            left:0;
-            top:0; 
-            max-width:270px;
-            border-radius:2px;
+            outline: 0;	
+            height: 50px;
+            padding: 0 10px; 
+            position: absolute; 
+            left: 0;
+            top: 0; 
+            max-width: 270px;
+            border-radius: 2px;
             background:#eee;
     }
     &-sbtn5{
-            width:70px;
-            height:50px;
-            position:absolute; 
-            left:280px; 
-            top:0;
-            border-radius:2px;
+            width: 70px;
+            height: 50px;
+            position: absolute; 
+            left: 280px; 
+            top: 0;
+            border-radius: 2px;
              background:#7fbfff;
             color:#fff;
-            font-weight:bold;
-         font-size:16px;
-            border:none;
+            font-weight: bold;
+         font-size: 16px;
+            border: none;
     }
     &-sbtn5:hover{
             background:#eee;

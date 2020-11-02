@@ -9,10 +9,6 @@ h1 {
   font-size: 64px;
 }
 
-h2 {
-  font-size: 80px;
-}
-
 /* layout */
 .l-body {
   width: 100%;
@@ -49,6 +45,24 @@ h2 {
   bottom: 0;
 }
 
+.l-takeout-text-1 {
+  position: relative;
+  width: 585px;
+  height: 174px;
+}
+
+.l-takeout-text-2 {
+  position: relative;
+}
+
+.l-eatin-text-1 {
+  position: relative;
+}
+
+.l-eatin-text-2 {
+  position: relative;
+}
+
 /* project */
 .p-header-left h1 {
   position: relative;
@@ -66,6 +80,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 0 111px;
 }
 
 .p-header-choice .p-header-takeout {
@@ -91,7 +108,7 @@ h2 {
   left: 0;
   top: 235px;
   left: 86px;
-  font-weight: 64px;
+  font-size: 40px;
   color: #ffffff;
 }
 
@@ -100,15 +117,17 @@ h2 {
           box-sizing: border-box;
   width: 100%;
   height: auto;
-  margin-left: 111px;
+  padding-right: 40px;
 }
 
 .c-image-text-takeout {
   position: relative;
   top: 130px;
-  left: 130px;
+  left: 50px;
   z-index: 100;
   color: #ffffff;
+  font-size: 80px;
+  line-height: 1.325;
 }
 
 .c-image-eatin {
@@ -116,15 +135,29 @@ h2 {
           box-sizing: border-box;
   width: 100%;
   height: auto;
-  margin-right: 112px;
+  padding-left: 40px;
 }
 
 .c-image-text-eatin {
   position: relative;
   top: 130px;
-  right: 0px;
+  left: 80px;
   z-index: 100;
   color: #ffffff;
+  font-size: 80px;
+  line-height: 1.325;
+}
+
+.c-image .c-text-heading {
+  background-color: #ffffff;
+}
+
+.c-image .c-text-heading h3 {
+  font-size: 24px;
+}
+
+.c-image .c-text-heading p {
+  font-size: 16px;
 }
 
 /* 検索フォーム*/
