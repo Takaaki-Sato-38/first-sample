@@ -52,6 +52,8 @@ img {
 .l-body .l-aside {
   width: 19.115%;
   background-color: #F2EDE9;
+  display: block;
+  height: auto;
 }
 
 .l-footer {
@@ -62,35 +64,57 @@ img {
   bottom: 0;
 }
 
+.l-takeout-text-wrapper {
+  width: 100%;
+  position: relative;
+  top: -500px;
+  z-index: 0;
+}
+
+.l-eatin-text-wrapper {
+  width: 100%;
+  position: relative;
+  top: -500px;
+  z-index: 0;
+}
+
 .l-takeout-text-1 {
   position: relative;
-  bottom: 500px;
-  left: 90px;
-  width: 580px;
+  bottom: 25%;
+  left: 9%;
+  top: 0;
+  right: 10%;
+  width: 75%;
   height: 174px;
 }
 
 .l-takeout-text-2 {
   position: relative;
-  bottom: 500px;
-  left: 90px;
-  width: 580px;
+  bottom: 25%;
+  left: 9%;
+  top: 0;
+  right: 10%;
+  width: 75%;
   height: 174px;
 }
 
 .l-eatin-text-1 {
   position: relative;
-  bottom: 500px;
-  left: 90px;
-  width: 580px;
+  bottom: 25%;
+  left: 16%;
+  top: 0;
+  right: 10%;
+  width: 75%;
   height: 174px;
 }
 
 .l-eatin-text-2 {
   position: relative;
-  bottom: 500px;
-  left: 90px;
-  width: 580px;
+  bottom: 25%;
+  left: 16%;
+  top: 0;
+  right: 10%;
+  width: 75%;
   height: 174px;
 }
 
@@ -118,10 +142,26 @@ img {
 
 .p-header-choice .p-header-takeout {
   width: 50%;
+  height: auto;
+}
+
+.p-header-choice .p-header-takeout:before {
+  content: "";
+  display: block;
 }
 
 .p-header-choice .p-header-eatin {
   width: 50%;
+}
+
+.p-header-choice .p-header-eatin:before {
+  content: "";
+  display: block;
+}
+
+.p-hamburger-menu {
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
 }
 
 /* component */
@@ -154,11 +194,12 @@ img {
 .c-image-text-takeout {
   position: relative;
   top: 130px;
-  left: 50px;
+  left: 80px;
   z-index: 100;
   color: #ffffff;
   font-size: 80px;
   line-height: 1.325;
+  display: block;
 }
 
 .c-image-eatin {
@@ -177,6 +218,7 @@ img {
   color: #ffffff;
   font-size: 80px;
   line-height: 1.325;
+  display: block;
 }
 
 .c-image .c-text-heading {
@@ -226,5 +268,44 @@ img {
 .c-form-sbtn5:hover {
   background: #eee;
   color: #7fbfff;
+}
+
+/* 地図 */
+iframe {
+  width: 100%;
+  display: block;
+  z-index: 1;
+  position: relative;
+}
+
+.l-class-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
+.c-map-text {
+  display: block;
+  position: relative;
+  opacity: 0.5;
+  z-index: 3;
+  width: 30%;
+  height: auto;
+}
+
+/* aside */
+.c-menu {
+  font-size: 24px;
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+.c-menu li {
+  font-size: 20px;
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */
