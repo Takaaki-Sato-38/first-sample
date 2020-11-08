@@ -1,5 +1,5 @@
 /* foundation */
-* { box-sizing: border-box;
+*, *:before, *:after{ box-sizing: border-box;
 
 }
 
@@ -37,6 +37,13 @@ img {
                 display: flex;
                 justify-content: space-between;
             }
+            &-map {
+                width: 100%;
+                height: auto;
+                position: absolute;
+            
+            }
+
     }
     .l-aside {
         width: 19.115%;
@@ -53,78 +60,82 @@ img {
     position: absolute;
     bottom: 0;
 }
-
-.l-takeout-text-wrapper {
+/* テイクアウト側に入れる文章のレイアウト */
+.l-takeout-text {
     width: 100%;
     position: relative;
     top: -500px;
     z-index: 0;
+    /* テイクアウト文章1 */
+    &-1 {
+        position: relative;
+        bottom: 25%;
+        left: 9%;
+        top: 0;
+        right: 10%;
+        width: 75%;
+        height: 174px;
+    }
+    /* テイクアウト文章2 */
+    &-2 {
+        position: relative;
+        bottom: 25%;
+        left: 9%;
+        top: 0;
+        right: 10%;
+        width: 75%;
+        height: 174px;
+    }
 }
-
-.l-eatin-text-wrapper {
+/* イートイン側に入れる文章のレイアウト */
+.l-eatin-text {
     width: 100%;
     position: relative;
     top: -500px;
     z-index: 0;
+    /* イートイン文章1 */
+    &-1 {
+        position: relative;
+        bottom: 25%;
+        left: 16%;
+        top: 0;
+        right: 10%;
+        width: 75%;
+        height: 174px;
+    }
+    /* イートイン文章2 */
+    &-2 {
+        position: relative;
+        bottom: 25%;
+        left: 16%;
+        top: 0;
+        right: 10%;
+        width: 75%;
+        height: 174px;
+    }
 }
 
-.l-takeout-text-1 {
-    position: relative;
-    bottom: 25%;
-    left: 9%;
-    top: 0;
-    right: 10%;
-    width: 75%;
-    height: 174px;
-    
-    
-    
-}
-.l-takeout-text-2 {
-    position: relative;
-    bottom: 25%;
-    left: 9%;
-    top: 0;
-    right: 10%;
-    width: 75%;
-    height: 174px;
-}
-.l-eatin-text-1 {
-    position: relative;
-    bottom: 25%;
-    left: 16%;
-    top: 0;
-    right: 10%;
-    width: 75%;
-    height: 174px;
-}
-.l-eatin-text-2 {
-    position: relative;
-    bottom: 25%;
-    left: 16%;
-    top: 0;
-    right: 10%;
-    width: 75%;
-    height: 174px;
-}
 
 
 /* project */
+/* ハンバーガーのロゴの位置*/
 .p-header-left h1{
     position: relative;
     top: 67px;
     left: 65px;
 }
+/* 検索バーの位置 */
 .p-header-right {
     position: relative;
     top: 86px;
     right: 397px;
 }
-
+/* テイクアウトとイートインのラッパー */
 .p-header-choice {
     display: flex;
     grid-template-columns: 1fr 1fr;
     padding: 0 111px;
+    /* テイクアウト */
     .p-header-takeout {
         width: 50%;
         height: auto;
@@ -135,6 +146,7 @@ img {
         content: "";
         display: block;
     }
+    /* イートイン */
     .p-header-eatin {
         width: 50%;
     }
@@ -144,7 +156,7 @@ img {
         display: block;
     }
 }
-
+/* サイド側のハンバーガーメニュー */
 .p-hamburger-menu {
     font-family: 'Roboto', sans-serif;
     font-size: 34px;
@@ -152,12 +164,16 @@ img {
 }
 
 /* component */
+
+/* 画像にテキストを載せる */
 .c-image {
     width: 100%;
+    /* トップ画像 */
     &-top {
         width: 100%;
         height: auto;
     }
+    /* トップ画像のテキスト */
     &-text-top {
         position: relative;
         left: 0;
@@ -167,6 +183,7 @@ img {
         
         color: #ffffff;
     }
+    /* テイクアウト側 */
     &-takeout {
         box-sizing: border-box;
         width: 100%;
@@ -184,6 +201,7 @@ img {
         line-height: 1.325;
         display: block;
     }
+    /* イートイン側 */
     &-eatin {
         box-sizing: border-box;
         width: 100%;
@@ -200,8 +218,8 @@ img {
         line-height: 1.325;
         display: block;
     }
-
-.c-text-heading {
+/* テイクアウトとイートインの中の文章 */
+.c-image-on-text {
     background-color: rgba($color:#ffffff, $alpha: 0.8);
 
      h3 {
@@ -248,27 +266,27 @@ img {
             color:#7fbfff;
     }
 }
-
 /* 地図 */
-iframe {
-    width: 100%;
-    display: block;
-    z-index: 1;
-    position: relative;
-}
-.l-class-map {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-}
+/* 地図の横の文字 */
 .c-map-text {
     display: block; 
-    position: relative;
-    opacity: 0.5;
-    z-index: 3;
+    position: absolute;
+    z-index: 2;
     width: 30%;
+    background-color: white;
     height: auto;
+    top: 0;
+    left: 0;
+    opacity: 0.5;   
+}
+/* google map */
+.c-googlemap {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    display: block;
+    
 }
 
 /* aside */

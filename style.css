@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* foundation */
-* {
+*, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -49,6 +49,12 @@ img {
           justify-content: space-between;
 }
 
+.l-body .l-header-map {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
 .l-body .l-aside {
   width: 19.115%;
   background-color: #F2EDE9;
@@ -64,18 +70,14 @@ img {
   bottom: 0;
 }
 
-.l-takeout-text-wrapper {
+/* テイクアウト側に入れる文章のレイアウト */
+.l-takeout-text {
   width: 100%;
   position: relative;
   top: -500px;
   z-index: 0;
-}
-
-.l-eatin-text-wrapper {
-  width: 100%;
-  position: relative;
-  top: -500px;
-  z-index: 0;
+  /* テイクアウト文章1 */
+  /* テイクアウト文章2 */
 }
 
 .l-takeout-text-1 {
@@ -96,6 +98,16 @@ img {
   right: 10%;
   width: 75%;
   height: 174px;
+}
+
+/* イートイン側に入れる文章のレイアウト */
+.l-eatin-text {
+  width: 100%;
+  position: relative;
+  top: -500px;
+  z-index: 0;
+  /* イートイン文章1 */
+  /* イートイン文章2 */
 }
 
 .l-eatin-text-1 {
@@ -119,18 +131,21 @@ img {
 }
 
 /* project */
+/* ハンバーガーのロゴの位置*/
 .p-header-left h1 {
   position: relative;
   top: 67px;
   left: 65px;
 }
 
+/* 検索バーの位置 */
 .p-header-right {
   position: relative;
   top: 86px;
   right: 397px;
 }
 
+/* テイクアウトとイートインのラッパー */
 .p-header-choice {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,6 +153,8 @@ img {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   padding: 0 111px;
+  /* テイクアウト */
+  /* イートイン */
 }
 
 .p-header-choice .p-header-takeout {
@@ -159,14 +176,21 @@ img {
   display: block;
 }
 
+/* サイド側のハンバーガーメニュー */
 .p-hamburger-menu {
   font-family: 'Roboto', sans-serif;
   font-size: 34px;
 }
 
 /* component */
+/* 画像にテキストを載せる */
 .c-image {
   width: 100%;
+  /* トップ画像 */
+  /* トップ画像のテキスト */
+  /* テイクアウト側 */
+  /* イートイン側 */
+  /* テイクアウトとイートインの中の文章 */
 }
 
 .c-image-top {
@@ -221,15 +245,15 @@ img {
   display: block;
 }
 
-.c-image .c-text-heading {
+.c-image .c-image-on-text {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.c-image .c-text-heading h3 {
+.c-image .c-image-on-text h3 {
   font-size: 24px;
 }
 
-.c-image .c-text-heading p {
+.c-image .c-image-on-text p {
   font-size: 16px;
 }
 
@@ -271,31 +295,26 @@ img {
 }
 
 /* 地図 */
-iframe {
-  width: 100%;
-  display: block;
-  z-index: 1;
-  position: relative;
-}
-
-.l-class-map {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  height: auto;
-}
-
+/* 地図の横の文字 */
 .c-map-text {
   display: block;
-  position: relative;
-  opacity: 0.5;
-  z-index: 3;
+  position: absolute;
+  z-index: 2;
   width: 30%;
+  background-color: white;
   height: auto;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+/* google map */
+.c-googlemap {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* aside */
