@@ -28,8 +28,9 @@ img {
 /* layout */
 .l-body {
     width: 100%;
-    height: 1553px;
+    height: auto;
     display: flex;
+    
     &-header {
         width: 80.885%;
         background-color: #FFF7EF;
@@ -37,12 +38,7 @@ img {
                 display: flex;
                 justify-content: space-between;
             }
-            &-map {
-                width: 100%;
-                height: 150px;
-                position: absolute;
             
-            }
 
     }
     &-aside {
@@ -266,34 +262,8 @@ img {
             color:#7fbfff;
     }
 }
-/* 地図 */
-/* 地図の横の文字 */
-.c-map-text {
-    display: block; 
-    position: absolute;
-    z-index: 2;
-    width: 50%;
-    background-color: #333333;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.5;   
-}
-.c-map-text p {
-    color: white;
-}
-.c-map-text h2 {
-    color: white;
-}
 
-/* google map */
-.c-googlemap {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%
-    
-}
+
 
 /* aside */
 .c-menu {
@@ -305,15 +275,15 @@ img {
     }
 }
 
-/* 猫と文字 */
+/* 文字とgooglemap */
 
-.position-z-index-wrapper {
+.p-map {
     width: 100%;
     height: 150px;
     position: relative;
 }
 
-.moji {
+.c-maptext {
     display: block;
     position: absolute;
     z-index: 2;
@@ -323,14 +293,16 @@ img {
     height: 100%;
     top: 0;
     left: 0;
+    p {
+        color: white;
+    }
+    h2 {
+        color: white;
+    }
+
 }
 
-.moji p {
-    color: white;
-}
-.moji h2 {
-    color: white;
-}
+
 
 .c-googlemap {
     position: absolute;
@@ -338,3 +310,5 @@ img {
     width: 100%;
     height: 100%;
 }
+
+/*  */
