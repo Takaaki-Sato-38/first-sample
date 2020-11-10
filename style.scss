@@ -283,9 +283,10 @@ img {
 
 /* 文字とgooglemap */
 
+
 .p-map {
     width: 100%;
-    height: 30rem;
+    height: auto;
     position: relative;
     bottom: 150px;
 }
@@ -305,21 +306,40 @@ img {
         position: relative;
         top: 5%;
         left: 5%;
+
     }
     h2 {
         color: white;
         position: relative;
         top: 5%;
         left: 5%;
+
     }
 
 }
 
-
-
 .c-googlemap {
     position: absolute;
     z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.iframe-wrapper{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-top: 50%;
+}
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 }
