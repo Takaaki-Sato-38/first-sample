@@ -56,6 +56,11 @@ img {
     position: absolute;
     bottom: 0;
     z-index: 5;
+    p {
+        text-align: center;
+        color: #ffffff;
+        font-size: 20px;
+        }
 }
 /* テイクアウト側に入れる文章のレイアウト */
 .l-takeout-text {
@@ -280,9 +285,9 @@ img {
 
 .p-map {
     width: 100%;
-    height: 300px;
+    height: 30rem;
     position: relative;
-    bottom: 8%;
+    bottom: 150px;
 }
 
 .c-maptext {
@@ -291,15 +296,21 @@ img {
     z-index: 2;
     background-color: #333333;
     opacity: 0.5;
-    width: 50%;
+    width: 62%;
     height: 100%;
     top: 0;
     left: 0;
     p {
         color: white;
+        position: relative;
+        top: 5%;
+        left: 5%;
     }
     h2 {
         color: white;
+        position: relative;
+        top: 5%;
+        left: 5%;
     }
 
 }
