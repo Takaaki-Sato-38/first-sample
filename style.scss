@@ -46,6 +46,53 @@ img {
         background-color: #F2EDE9;
         display: block;
         height: auto;
+            &-menu {
+               
+                position: relative;
+                top: 82px;
+                left: 46px;
+    
+            }
+            &-hamburger {
+                position: relative;
+                top: 82px;
+                left: 46px;
+                padding-top: 30px;
+                padding-bottom: 50px;
+                    li {
+                        position: relative;
+                        top: 30px;
+                        left: 24px;
+                        padding-top: 23px;
+                    }
+            }
+            &-side-menu {
+                position: relative;
+                top: 82px;
+                left: 46px;
+                padding-top: 30px;
+                padding-bottom: 50px;
+                    li {
+                        position: relative;
+                        top: 30px;
+                        left: 24px;
+                        padding-top: 23px;
+                    }
+            }
+
+            &-drink-menu {
+                position: relative;
+                top: 82px;
+                left: 46px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                    li {
+                        position: relative;
+                        top: 30px;
+                        left: 24px;
+                        padding-top: 23px;
+                    }
+            }
         
     }
 }
@@ -123,7 +170,7 @@ img {
 /* ハンバーガーのロゴの位置*/
 .p-header-left h1{
     position: relative;
-    top: 67px;
+    top: 26px;
     left: 65px;
 }
 /* 検索バーの位置 */
@@ -163,6 +210,16 @@ img {
     font-family: 'Roboto', sans-serif;
     font-size: 34px;
 
+
+}
+
+.c-menu {
+    color: #303030;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 24px;
+        li {
+            font-size: 20px;
+        }
 }
 
 /* component */
@@ -236,8 +293,9 @@ img {
 
 /* 検索フォーム*/
 .c-form{
-    position: relative; 
-    margin-bottom:  20px;	
+    position: relative;
+    bottom: 40px;
+    margin-bottom: 20px;	
     
     &-sbox5{	
             outline: 0;	
@@ -247,29 +305,38 @@ img {
             left: 0;
             top: 0; 
             max-width: 270px;
-            border-radius: 2px;
-            background:#eee;
+            border-radius: 10px;
+            background:#ffffff;
+            border: 1px solid #707070;
     }
     &-sbtn5{
             width: 70px;
             height: 50px;
             position: absolute; 
-            left: 280px; 
+            left: 230px; 
             top: 0;
-            border-radius: 2px;
-             background:#7fbfff;
-            color:#fff;
+            border-radius: 10px;
+            background: #F2EDE9;
+            color:#707070;
             font-weight: bold;
-         font-size: 16px;
-            border: none;
+            font-size: 16px;
+            border: 1px solid #707070;
     }
     &-sbtn5:hover{
-            background:#eee;
-            color:#7fbfff;
+            background:#707070;
+            color: #F2EDE9;
+            border: 1px solid #F2EDE9;
     }
 }
 
-
+.fas {
+    font-weight: 900;
+    z-index: 2;
+    position: absolute;
+    color: #707070;
+    position: relative;
+    top: 6px;
+}
 
 /* aside */
 .c-menu {
@@ -334,7 +401,7 @@ img{
     position: relative;
     height: 0;
     overflow: hidden;
-    padding-top: 50%;
+    padding-top: 41.8%;
 }
 iframe{
     position: absolute;
