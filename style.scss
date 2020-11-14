@@ -1,4 +1,21 @@
 /* foundation */
+
+
+
+$tb: 834px; // タブレット用のブレイクポイント
+@mixin tb {
+    @media (max-width: ($tb)) {
+        @content;
+    }
+}
+
+$sp: 375px; // スマートフォン用のブレイクポイント
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
 *, *:before, *:after{ box-sizing: border-box;
 
 }
@@ -8,6 +25,9 @@
 h1 {
     font-size: 64px;
     font-family: 'Roboto', sans-serif;
+    @include tb {        
+            font-size: 40px;    
+    }
 }
 
 h2 {
@@ -34,6 +54,9 @@ img {
     &-header {
         width: 80.885%;
         background-color: #FFF7EF;
+        @include tb {
+            width: 100%;
+        }
             &-top {
                 display: flex;
                 justify-content: space-between;
@@ -46,6 +69,9 @@ img {
         background-color: #F2EDE9;
         display: block;
         height: auto;
+        @include tb {
+                display: none;
+        }
             &-menu {
                
                 position: relative;
@@ -188,6 +214,8 @@ img {
     .p-header-takeout {
         width: 50%;
         height: auto;
+
+        
         
         
     }
@@ -198,6 +226,7 @@ img {
     /* イートイン */
     .p-header-eatin {
         width: 50%;
+
     }
 
     .p-header-eatin:before {
@@ -227,6 +256,7 @@ img {
 /* 画像にテキストを載せる */
 .c-image {
     width: 100%;
+    
     /* トップ画像 */
     &-top {
         width: 100%;
@@ -235,13 +265,17 @@ img {
     /* トップ画像のテキスト */
     &-text-top {
         position: relative;
-        left: 0;
         top: 235px;
         left: 86px;
-        font-size: 40px;
-        
+
         color: #ffffff;
+        font-size: 40px;
+        @include tb {
+                font-size: 36px;
+        }
+
     }
+
     /* テイクアウト側 */
     &-takeout {
         box-sizing: border-box;
@@ -259,7 +293,11 @@ img {
         font-size: 80px;
         line-height: 1.325;
         display: block;
+        @include tb {
+            font-size: 44px; 
+        }
     }
+    
     /* イートイン側 */
     &-eatin {
         box-sizing: border-box;
@@ -276,7 +314,11 @@ img {
         font-size: 80px;
         line-height: 1.325;
         display: block;
+        @include tb {
+            font-size: 44px; 
+        }
     }
+}
 /* テイクアウトとイートインの中の文章 */
 .c-image-on-text {
     background-color: rgba($color:#ffffff, $alpha: 0.8);
@@ -287,8 +329,6 @@ img {
      p {
          font-size: 16px;
      }
-}
-    
 }
 
 /* 検索フォーム*/
@@ -368,6 +408,9 @@ img {
     height: 100%;
     top: 0;
     left: 0;
+    @include tb {
+        width: 100%;
+    }
     p {
         color: white;
         position: relative;
@@ -415,3 +458,4 @@ iframe{
 .wrapper {
     position: relative;
 }
+

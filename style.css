@@ -10,6 +10,12 @@ h1 {
   font-family: 'Roboto', sans-serif;
 }
 
+@media (max-width: 834px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
 h2 {
   font-family: 'Roboto', sans-serif;
 }
@@ -40,6 +46,12 @@ img {
   background-color: #FFF7EF;
 }
 
+@media (max-width: 834px) {
+  .l-body-header {
+    width: 100%;
+  }
+}
+
 .l-body-header-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,6 +66,12 @@ img {
   background-color: #F2EDE9;
   display: block;
   height: auto;
+}
+
+@media (max-width: 834px) {
+  .l-body-aside {
+    display: none;
+  }
 }
 
 .l-body-aside-menu {
@@ -252,7 +270,6 @@ img {
   /* トップ画像のテキスト */
   /* テイクアウト側 */
   /* イートイン側 */
-  /* テイクアウトとイートインの中の文章 */
 }
 
 .c-image-top {
@@ -262,11 +279,16 @@ img {
 
 .c-image-text-top {
   position: relative;
-  left: 0;
   top: 235px;
   left: 86px;
-  font-size: 40px;
   color: #ffffff;
+  font-size: 40px;
+}
+
+@media (max-width: 834px) {
+  .c-image-text-top {
+    font-size: 36px;
+  }
 }
 
 .c-image-takeout {
@@ -288,6 +310,12 @@ img {
   display: block;
 }
 
+@media (max-width: 834px) {
+  .c-image-text-takeout {
+    font-size: 44px;
+  }
+}
+
 .c-image-eatin {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -307,15 +335,22 @@ img {
   display: block;
 }
 
-.c-image .c-image-on-text {
+@media (max-width: 834px) {
+  .c-image-text-eatin {
+    font-size: 44px;
+  }
+}
+
+/* テイクアウトとイートインの中の文章 */
+.c-image-on-text {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.c-image .c-image-on-text h3 {
+.c-image-on-text h3 {
   font-size: 24px;
 }
 
-.c-image .c-image-on-text p {
+.c-image-on-text p {
   font-size: 16px;
 }
 
@@ -397,6 +432,12 @@ img {
   height: 100%;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 834px) {
+  .c-maptext {
+    width: 100%;
+  }
 }
 
 .c-maptext p {
