@@ -41,6 +41,12 @@ img {
   display: flex;
 }
 
+@media (max-width: 834px) {
+  .l-body {
+    height: 1676px;
+  }
+}
+
 .l-body-header {
   width: 80.885%;
   background-color: #FFF7EF;
@@ -59,6 +65,15 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 834px) {
+  .l-body-header-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .l-body-aside {
@@ -150,6 +165,13 @@ img {
   /* テイクアウト文章2 */
 }
 
+@media (max-width: 834px) {
+  .l-takeout-text {
+    position: relative;
+    top: -360px;
+  }
+}
+
 .l-takeout-text-1 {
   position: relative;
   bottom: 25%;
@@ -180,6 +202,13 @@ img {
   /* イートイン文章2 */
 }
 
+@media (max-width: 834px) {
+  .l-eatin-text {
+    position: relative;
+    top: -360px;
+  }
+}
+
 .l-eatin-text-1 {
   position: relative;
   bottom: 25%;
@@ -208,11 +237,23 @@ img {
   left: 65px;
 }
 
+@media (max-width: 834px) {
+  .p-header-left h1 {
+    left: 34%;
+  }
+}
+
 /* 検索バーの位置 */
 .p-header-right {
   position: relative;
   top: 86px;
   right: 397px;
+}
+
+@media (max-width: 834px) {
+  .p-header-right {
+    right: -30%;
+  }
 }
 
 /* テイクアウトとイートインのラッパー */
@@ -227,6 +268,12 @@ img {
   /* イートイン */
 }
 
+@media (max-width: 834px) {
+  .p-header-choice {
+    padding: 0 40px;
+  }
+}
+
 .p-header-choice .p-header-takeout {
   width: 50%;
   height: auto;
@@ -239,6 +286,7 @@ img {
 
 .p-header-choice .p-header-eatin {
   width: 50%;
+  height: auto;
 }
 
 .p-header-choice .p-header-eatin:before {
@@ -288,6 +336,7 @@ img {
 @media (max-width: 834px) {
   .c-image-text-top {
     font-size: 36px;
+    top: 150px;
   }
 }
 
@@ -302,7 +351,7 @@ img {
 .c-image-text-takeout {
   position: relative;
   top: 130px;
-  left: 80px;
+  left: 40px;
   z-index: 100;
   color: #ffffff;
   font-size: 80px;
@@ -363,7 +412,7 @@ img {
 
 .c-form-sbox5 {
   outline: 0;
-  height: 50px;
+  height: 46px;
   padding: 0 10px;
   position: absolute;
   left: 0;
@@ -374,9 +423,17 @@ img {
   border: 1px solid #707070;
 }
 
+@media (max-width: 834px) {
+  .c-form-sbox5 {
+    width: 396px;
+    max-width: 600px;
+    left: -20%;
+  }
+}
+
 .c-form-sbtn5 {
-  width: 70px;
-  height: 50px;
+  width: 136px;
+  height: 46px;
   position: absolute;
   left: 230px;
   top: 0;
@@ -386,6 +443,12 @@ img {
   font-weight: bold;
   font-size: 16px;
   border: 1px solid #707070;
+}
+
+@media (max-width: 834px) {
+  .c-form-sbtn5 {
+    left: 40%;
+  }
 }
 
 .c-form-sbtn5:hover {
@@ -401,6 +464,23 @@ img {
   color: #707070;
   position: relative;
   top: 6px;
+}
+
+@media (max-width: 834px) {
+  .fas {
+    left: -20%;
+  }
+}
+
+/* スライドメニュー */
+.slide-menu {
+  display: none;
+}
+
+@media (max-width: 834px) {
+  .slide-menu {
+    display: block;
+  }
 }
 
 /* aside */
@@ -420,6 +500,12 @@ img {
   height: auto;
   position: relative;
   bottom: 150px;
+}
+
+@media (max-width: 834px) {
+  .p-map {
+    top: -295px;
+  }
 }
 
 .c-maptext {
@@ -447,11 +533,23 @@ img {
   left: 5%;
 }
 
+@media (max-width: 834px) {
+  .c-maptext p {
+    font-size: 14px;
+  }
+}
+
 .c-maptext h2 {
   color: white;
   position: relative;
   top: 5%;
   left: 5%;
+}
+
+@media (max-width: 834px) {
+  .c-maptext h2 {
+    font-size: 30px;
+  }
 }
 
 .c-googlemap {

@@ -50,6 +50,9 @@ img {
     width: 100%;
     height: auto;
     display: flex;
+    @include tb {
+        height: 1676px;
+    }
     
     &-header {
         width: 80.885%;
@@ -60,6 +63,11 @@ img {
             &-top {
                 display: flex;
                 justify-content: space-between;
+                @include tb {
+                    flex-direction: column;
+                    
+                    
+                }
             }
             
 
@@ -141,6 +149,10 @@ img {
     position: relative;
     top: -500px;
     z-index: 0;
+    @include tb {
+        position: relative;
+        top: -360px;
+    }
     /* テイクアウト文章1 */
     &-1 {
         position: relative;
@@ -168,6 +180,11 @@ img {
     position: relative;
     top: -500px;
     z-index: 0;
+
+    @include tb {
+        position: relative;
+        top: -360px;
+    }
     /* イートイン文章1 */
     &-1 {
         position: relative;
@@ -194,22 +211,34 @@ img {
 
 /* project */
 /* ハンバーガーのロゴの位置*/
-.p-header-left h1{
+.p-header-left h1 {
     position: relative;
     top: 26px;
     left: 65px;
+    
+    @include tb {
+        left: 34%;
+    }
+        
+    
 }
 /* 検索バーの位置 */
 .p-header-right {
     position: relative;
     top: 86px;
     right: 397px;
+    @include tb {
+        right: -30%;
+    }
 }
 /* テイクアウトとイートインのラッパー */
 .p-header-choice {
     display: flex;
     grid-template-columns: 1fr 1fr;
     padding: 0 111px;
+    @include tb {
+        padding: 0 40px;
+    }
     /* テイクアウト */
     .p-header-takeout {
         width: 50%;
@@ -226,6 +255,8 @@ img {
     /* イートイン */
     .p-header-eatin {
         width: 50%;
+        height: auto;
+        
 
     }
 
@@ -272,6 +303,7 @@ img {
         font-size: 40px;
         @include tb {
                 font-size: 36px;
+                top: 150px;
         }
 
     }
@@ -283,16 +315,18 @@ img {
         height: auto;
         padding-right: 40px;
 
+
     }
     &-text-takeout {
         position: relative;
         top: 130px;
-        left: 80px;
+        left: 40px;
         z-index: 100;
         color: #ffffff;
         font-size: 80px;
         line-height: 1.325;
         display: block;
+
         @include tb {
             font-size: 44px; 
         }
@@ -304,6 +338,7 @@ img {
         width: 100%;
         height: auto;
         padding-left: 40px;
+
     }
     &-text-eatin {
         position: relative;
@@ -339,7 +374,7 @@ img {
     
     &-sbox5{	
             outline: 0;	
-            height: 50px;
+            height: 46px;
             padding: 0 10px; 
             position: absolute; 
             left: 0;
@@ -348,10 +383,15 @@ img {
             border-radius: 10px;
             background:#ffffff;
             border: 1px solid #707070;
+            @include tb {
+                width: 396px;
+                max-width: 600px;
+                left: -20%;
+            }
     }
     &-sbtn5{
-            width: 70px;
-            height: 50px;
+            width: 136px;
+            height: 46px;
             position: absolute; 
             left: 230px; 
             top: 0;
@@ -361,6 +401,9 @@ img {
             font-weight: bold;
             font-size: 16px;
             border: 1px solid #707070;
+            @include tb {
+                left: 40%;
+            }
     }
     &-sbtn5:hover{
             background:#707070;
@@ -376,6 +419,17 @@ img {
     color: #707070;
     position: relative;
     top: 6px;
+    @include tb {
+        left: -20%;
+    }
+}
+
+/* スライドメニュー */
+.slide-menu {
+    display: none;
+    @include tb {
+        display: block;
+    }
 }
 
 /* aside */
@@ -396,6 +450,9 @@ img {
     height: auto;
     position: relative;
     bottom: 150px;
+    @include tb {
+        top: -295px;
+    }
 }
 
 .c-maptext {
@@ -416,6 +473,9 @@ img {
         position: relative;
         top: 5%;
         left: 5%;
+        @include tb {
+            font-size: 14px;
+        }
 
     }
     h2 {
@@ -423,6 +483,9 @@ img {
         position: relative;
         top: 5%;
         left: 5%;
+        @include tb {
+            font-size: 30px;
+        }
 
     }
 
