@@ -51,7 +51,7 @@ img {
     height: auto;
     display: flex;
     @include tb {
-        height: 1676px;
+        
         position: relative;
         
         .show {
@@ -87,6 +87,9 @@ img {
         display: block;
         height: auto;
         @include tb {
+                display: none;
+        }
+        @include sp {
                 display: none;
         }
             &-menu {
@@ -156,11 +159,17 @@ img {
 .l-takeout-text {
     width: 100%;
     position: relative;
-    top: -500px;
+    top: -30%;
     z-index: 0;
+    
+
     @include tb {
         position: relative;
         top: -360px;
+    }
+    @include sp {
+        position: relative;
+        top: -420px;
     }
     /* テイクアウト文章1 */
     &-1 {
@@ -170,8 +179,14 @@ img {
         top: 0;
         right: 10%;
         width: 75%;
-        height: 174px;
+      
+        @include sp {
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
     }
+
     /* テイクアウト文章2 */
     &-2 {
         position: relative;
@@ -180,19 +195,29 @@ img {
         top: 0;
         right: 10%;
         width: 75%;
-        height: 174px;
+    
+        @include sp {
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
     }
 }
 /* イートイン側に入れる文章のレイアウト */
 .l-eatin-text {
     width: 100%;
     position: relative;
-    top: -500px;
+    top: -30%;
     z-index: 0;
+
 
     @include tb {
         position: relative;
         top: -360px;
+    }
+    @include sp {
+        position: relative;
+        top: -700px;
     }
     /* イートイン文章1 */
     &-1 {
@@ -202,7 +227,12 @@ img {
         top: 0;
         right: 10%;
         width: 75%;
-        height: 174px;
+        
+        @include sp {
+            left: 0px;
+            right: 0px;
+            width: 100%;
+        }
     }
     /* イートイン文章2 */
     &-2 {
@@ -212,7 +242,12 @@ img {
         top: 0;
         right: 10%;
         width: 75%;
-        height: 174px;
+        
+        @include sp {
+            left: 0px;
+            right: 0px;
+            width: 100%;
+        }
     }
 }
 
@@ -223,7 +258,7 @@ img {
 .p-header-left h1 {
     position: relative;
     top: 26px;
-    left: 65px;
+    left: 6%;
     
     @include tb {
         left: 34%;
@@ -240,18 +275,34 @@ img {
         right: -30%;
     }
 }
+
+.p-header-top-image {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
 /* テイクアウトとイートインのラッパー */
 .p-header-choice {
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 111px;
+    padding-left: 2%;
+    padding-right: 2%;
+    
+    
     @include tb {
         padding: 0 40px;
+    }
+    @include sp {
+        flex-direction: column;
+        padding: 0 20px;
     }
     /* テイクアウト */
     .p-header-takeout {
         width: 50%;
         height: auto;
+        position: relative;
+        @include sp {
+            width: 100%;
+        }
 
         
         
@@ -265,6 +316,11 @@ img {
     .p-header-eatin {
         width: 50%;
         height: auto;
+        position: relative;
+
+        @include sp {
+            width: 100%;
+        }
         
 
     }
@@ -302,6 +358,8 @@ img {
 /* 画像にテキストを載せる */
 .c-image {
     width: 100%;
+    position: relative;
+    
     
     /* トップ画像 */
     &-top {
@@ -310,32 +368,35 @@ img {
     }
     /* トップ画像のテキスト */
     &-text-top {
-        position: relative;
-        top: 235px;
-        left: 86px;
+        position: absolute;
+        top: 35%;
+        left: 10%;
 
         color: #ffffff;
         font-size: 40px;
+   
         @include tb {
                 font-size: 36px;
-                top: 150px;
+        
         }
 
     }
 
     /* テイクアウト側 */
     &-takeout {
-        box-sizing: border-box;
         width: 100%;
         height: auto;
         padding-right: 40px;
+        @include sp {
+            padding-right: 0px;
+        }
 
 
     }
     &-text-takeout {
-        position: relative;
-        top: 130px;
-        left: 40px;
+        position: absolute;
+        top: 20%;
+        left: 2%;
         z-index: 100;
         color: #ffffff;
         font-size: 80px;
@@ -349,23 +410,34 @@ img {
     
     /* イートイン側 */
     &-eatin {
-        box-sizing: border-box;
+        
         width: 100%;
         height: auto;
         padding-left: 40px;
+        @include sp {
+            padding-left: 0px;
+            position: relative;
+            top: -300px;
+        }
+        
 
     }
     &-text-eatin {
-        position: relative;
-        top: 130px;
-        left: 80px;
+        position: absolute;
+        top: 20%;
+        left: 16%;
         z-index: 100;
         color: #ffffff;
         font-size: 80px;
         line-height: 1.325;
         display: block;
+
         @include tb {
             font-size: 44px; 
+        }
+        @include sp {
+            position: relative;
+            top: -130px; 
         }
     }
 }

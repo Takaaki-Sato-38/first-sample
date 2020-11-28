@@ -93,6 +93,12 @@ img {
   }
 }
 
+@media (max-width: 375px) {
+  .l-body-aside {
+    display: none;
+  }
+}
+
 .l-body-aside-menu {
   position: relative;
   top: 82px;
@@ -163,7 +169,7 @@ img {
 .l-takeout-text {
   width: 100%;
   position: relative;
-  top: -500px;
+  top: -30%;
   z-index: 0;
   /* テイクアウト文章1 */
   /* テイクアウト文章2 */
@@ -176,6 +182,13 @@ img {
   }
 }
 
+@media (max-width: 375px) {
+  .l-takeout-text {
+    position: relative;
+    top: -420px;
+  }
+}
+
 .l-takeout-text-1 {
   position: relative;
   bottom: 25%;
@@ -183,7 +196,14 @@ img {
   top: 0;
   right: 10%;
   width: 75%;
-  height: 174px;
+}
+
+@media (max-width: 375px) {
+  .l-takeout-text-1 {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
 }
 
 .l-takeout-text-2 {
@@ -193,14 +213,21 @@ img {
   top: 0;
   right: 10%;
   width: 75%;
-  height: 174px;
+}
+
+@media (max-width: 375px) {
+  .l-takeout-text-2 {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
 }
 
 /* イートイン側に入れる文章のレイアウト */
 .l-eatin-text {
   width: 100%;
   position: relative;
-  top: -500px;
+  top: -30%;
   z-index: 0;
   /* イートイン文章1 */
   /* イートイン文章2 */
@@ -213,6 +240,13 @@ img {
   }
 }
 
+@media (max-width: 375px) {
+  .l-eatin-text {
+    position: relative;
+    top: -700px;
+  }
+}
+
 .l-eatin-text-1 {
   position: relative;
   bottom: 25%;
@@ -220,7 +254,14 @@ img {
   top: 0;
   right: 10%;
   width: 75%;
-  height: 174px;
+}
+
+@media (max-width: 375px) {
+  .l-eatin-text-1 {
+    left: 0px;
+    right: 0px;
+    width: 100%;
+  }
 }
 
 .l-eatin-text-2 {
@@ -230,7 +271,14 @@ img {
   top: 0;
   right: 10%;
   width: 75%;
-  height: 174px;
+}
+
+@media (max-width: 375px) {
+  .l-eatin-text-2 {
+    left: 0px;
+    right: 0px;
+    width: 100%;
+  }
 }
 
 /* project */
@@ -238,7 +286,7 @@ img {
 .p-header-left h1 {
   position: relative;
   top: 26px;
-  left: 65px;
+  left: 6%;
 }
 
 @media (max-width: 834px) {
@@ -260,14 +308,18 @@ img {
   }
 }
 
+.p-header-top-image {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
 /* テイクアウトとイートインのラッパー */
 .p-header-choice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  padding: 0 111px;
+  padding-left: 2%;
+  padding-right: 2%;
   /* テイクアウト */
   /* イートイン */
 }
@@ -278,9 +330,26 @@ img {
   }
 }
 
+@media (max-width: 375px) {
+  .p-header-choice {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 20px;
+  }
+}
+
 .p-header-choice .p-header-takeout {
   width: 50%;
   height: auto;
+  position: relative;
+}
+
+@media (max-width: 375px) {
+  .p-header-choice .p-header-takeout {
+    width: 100%;
+  }
 }
 
 .p-header-choice .p-header-takeout:before {
@@ -291,6 +360,13 @@ img {
 .p-header-choice .p-header-eatin {
   width: 50%;
   height: auto;
+  position: relative;
+}
+
+@media (max-width: 375px) {
+  .p-header-choice .p-header-eatin {
+    width: 100%;
+  }
 }
 
 .p-header-choice .p-header-eatin:before {
@@ -330,6 +406,7 @@ img {
 /* 画像にテキストを載せる */
 .c-image {
   width: 100%;
+  position: relative;
   /* トップ画像 */
   /* トップ画像のテキスト */
   /* テイクアウト側 */
@@ -342,9 +419,9 @@ img {
 }
 
 .c-image-text-top {
-  position: relative;
-  top: 235px;
-  left: 86px;
+  position: absolute;
+  top: 35%;
+  left: 10%;
   color: #ffffff;
   font-size: 40px;
 }
@@ -352,22 +429,25 @@ img {
 @media (max-width: 834px) {
   .c-image-text-top {
     font-size: 36px;
-    top: 150px;
   }
 }
 
 .c-image-takeout {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: 100%;
   height: auto;
   padding-right: 40px;
 }
 
+@media (max-width: 375px) {
+  .c-image-takeout {
+    padding-right: 0px;
+  }
+}
+
 .c-image-text-takeout {
-  position: relative;
-  top: 130px;
-  left: 40px;
+  position: absolute;
+  top: 20%;
+  left: 2%;
   z-index: 100;
   color: #ffffff;
   font-size: 80px;
@@ -382,17 +462,23 @@ img {
 }
 
 .c-image-eatin {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: 100%;
   height: auto;
   padding-left: 40px;
 }
 
+@media (max-width: 375px) {
+  .c-image-eatin {
+    padding-left: 0px;
+    position: relative;
+    top: -300px;
+  }
+}
+
 .c-image-text-eatin {
-  position: relative;
-  top: 130px;
-  left: 80px;
+  position: absolute;
+  top: 20%;
+  left: 16%;
   z-index: 100;
   color: #ffffff;
   font-size: 80px;
@@ -403,6 +489,13 @@ img {
 @media (max-width: 834px) {
   .c-image-text-eatin {
     font-size: 44px;
+  }
+}
+
+@media (max-width: 375px) {
+  .c-image-text-eatin {
+    position: relative;
+    top: -130px;
   }
 }
 
