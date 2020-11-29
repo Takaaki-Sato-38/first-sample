@@ -43,7 +43,6 @@ img {
 
 @media (max-width: 834px) {
   .l-body {
-    height: 1676px;
     position: relative;
   }
   .l-body .show {
@@ -178,7 +177,8 @@ img {
 @media (max-width: 834px) {
   .l-takeout-text {
     position: relative;
-    top: -360px;
+    top: -35%;
+    right: 2%;
   }
 }
 
@@ -236,7 +236,8 @@ img {
 @media (max-width: 834px) {
   .l-eatin-text {
     position: relative;
-    top: -360px;
+    top: -35%;
+    left: 2%;
   }
 }
 
@@ -322,6 +323,13 @@ img {
   padding-right: 2%;
   /* テイクアウト */
   /* イートイン */
+}
+
+@media (max-width: 834px) {
+  .p-header-choice {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
 }
 
 @media (max-width: 834px) {
@@ -458,6 +466,7 @@ img {
 @media (max-width: 834px) {
   .c-image-text-takeout {
     font-size: 44px;
+    top: 10%;
   }
 }
 
@@ -489,6 +498,7 @@ img {
 @media (max-width: 834px) {
   .c-image-text-eatin {
     font-size: 44px;
+    top: 10%;
   }
 }
 
@@ -628,12 +638,6 @@ img {
   bottom: 150px;
 }
 
-@media (max-width: 834px) {
-  .p-map {
-    top: -295px;
-  }
-}
-
 .c-maptext {
   display: block;
   position: absolute;
@@ -710,12 +714,18 @@ iframe {
   position: relative;
 }
 
+@media (max-width: 834px) {
+  .wrapper {
+    max-height: 1826px;
+  }
+}
+
 /* レスポンシブデザインサイドメニュー */
 .side-menu {
   display: none;
 }
 
-.side-menu-btn {
+.c-side-menu-btn {
   display: none;
 }
 
@@ -798,19 +808,21 @@ iframe {
     top: 80px;
   }
   /* 開閉用ボタン ※ボタンの細かいスタイルは省略 */
-  .side-menu-btn {
+  .c-side-menu-btn {
     display: block;
     position: fixed;
     top: 20px;
     right: 20px;
-    width: 40px;
+    width: 55px;
     height: 40px;
     padding: 5px;
-    background-color: #FFF7EF;
+    background-color: #fff;
     cursor: pointer;
     z-index: 102;
+    border-radius: 10px;
+    border: 1px solid #707070;
   }
-  .side-menu-btn.show {
+  .c-side-menu-btn.show {
     display: none;
   }
   .c-fas {

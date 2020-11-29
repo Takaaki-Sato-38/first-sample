@@ -1,14 +1,14 @@
 
 /* メニューボタンを押すとサイドメニューが出現する */
 $(function() {
-	$('.side-menu-btn').click(function() {
+	$('.c-side-menu-btn').click(function() {
 	  $('.side-menu').toggleClass('show');
 	});
   });
 
 /* メニューボタンを押すと✖️ボタンが出現 */
   $(function() {
-	$('.side-menu-btn').click(function() {
+	$('.c-side-menu-btn').click(function() {
 		$('.c-fas').toggleClass('show'); 
 		
 	});
@@ -16,15 +16,15 @@ $(function() {
 
 /* メニューボタンを押すとメニューボタンが消える */
   $(function() {
-	$('.side-menu-btn').click(function() {
+	$('.c-side-menu-btn').click(function() {
 		
-		$('.side-menu-btn').toggleClass('show');
+		$('.c-side-menu-btn').toggleClass('show');
 	});
   }); 
 
  /* メニューボタンを押すと黒いオーバーレイがボディにかかる */
   $(function() {
-	$('.side-menu-btn').click(function() {
+	$('.c-side-menu-btn').click(function() {
 		
 		$('.l-body').toggleClass('side-open');
 	});
@@ -50,7 +50,7 @@ $(function() {
 /* ✖️ボタンを押すとメニューボタンが出現する */
   $(function() {
 	$('.c-fas').click(function() {
-	  $('.side-menu-btn').removeClass('show');
+	  $('.c-side-menu-btn').removeClass('show');
 	  
 	});
   });

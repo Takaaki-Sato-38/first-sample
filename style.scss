@@ -161,12 +161,14 @@ img {
     position: relative;
     top: -30%;
     z-index: 0;
-    
-
     @include tb {
         position: relative;
-        top: -360px;
+        top: -35%;
+        right: 2%;
     }
+    
+
+
     @include sp {
         position: relative;
         top: -420px;
@@ -213,7 +215,8 @@ img {
 
     @include tb {
         position: relative;
-        top: -360px;
+        top: -35%;
+        left: 2%;
     }
     @include sp {
         position: relative;
@@ -286,6 +289,10 @@ img {
     display: flex;
     padding-left: 2%;
     padding-right: 2%;
+    @include tb {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
     
     
     @include tb {
@@ -404,7 +411,8 @@ img {
         display: block;
 
         @include tb {
-            font-size: 44px; 
+            font-size: 44px;
+            top: 10%; 
         }
     }
     
@@ -433,7 +441,8 @@ img {
         display: block;
 
         @include tb {
-            font-size: 44px; 
+            font-size: 44px;
+            top: 10%; 
         }
         @include sp {
             position: relative;
@@ -549,9 +558,7 @@ img {
     height: auto;
     position: relative;
     bottom: 150px;
-    @include tb {
-        top: -295px;
-    }
+    
 }
 
 .c-maptext {
@@ -619,15 +626,19 @@ iframe{
 /* body((header+aside)+footer) */
 .wrapper {
     position: relative;
+    @include tb {
+        max-height: 1826px;
+    }
 }
 
 
 /* レスポンシブデザインサイドメニュー */
 .side-menu {
     display: none;
-    &-btn {
-        display: none;
-    }
+    
+}
+.c-side-menu-btn {
+    display: none;
 }
 .c-show {
     display: none;
@@ -718,19 +729,21 @@ iframe{
   }
 
   /* 開閉用ボタン ※ボタンの細かいスタイルは省略 */
-  .side-menu-btn {
+  .c-side-menu-btn {
     display: block;
     position: fixed;
     top: 20px;
     right: 20px;
-    width: 40px;
+    width: 55px;
     height: 40px;
     padding: 5px;
-    background-color: #FFF7EF;
+    background-color: #fff;
     cursor: pointer;
     z-index: 102;
+    border-radius: 10px;
+    border: 1px solid #707070;
   }
-  .side-menu-btn.show {
+  .c-side-menu-btn.show {
       display: none;
   }
 
