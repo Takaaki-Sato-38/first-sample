@@ -26,7 +26,10 @@ h1 {
     font-size: 64px;
     font-family: 'Roboto', sans-serif;
     @include tb {        
-            font-size: 40px;    
+            font-size: 36px;    
+    }
+    @include sp {
+        font-size: 32px;
     }
 }
 
@@ -45,6 +48,7 @@ p {
 img {
     height: auto;
 }
+
 /* layout */
 .l-body {
     width: 100%;
@@ -96,47 +100,53 @@ img {
                
                 position: relative;
                 top: 82px;
-                left: 46px;
-    
+                padding-left: 46px;
+                
             }
             &-hamburger {
                 position: relative;
                 top: 82px;
-                left: 46px;
+                
                 padding-top: 30px;
                 padding-bottom: 50px;
+                padding-left: 46px;
                     li {
                         position: relative;
                         top: 30px;
-                        left: 24px;
+                        
                         padding-top: 23px;
+                        padding-left: 18px;
                     }
             }
             &-side-menu {
                 position: relative;
                 top: 82px;
-                left: 46px;
+                
                 padding-top: 30px;
                 padding-bottom: 50px;
+                padding-left: 46px;
                     li {
                         position: relative;
                         top: 30px;
-                        left: 24px;
+                        
                         padding-top: 23px;
+                        padding-left: 18px;
                     }
             }
 
             &-drink-menu {
                 position: relative;
                 top: 82px;
-                left: 46px;
+                
                 padding-top: 30px;
                 padding-bottom: 30px;
+                padding-left: 46px;
                     li {
                         position: relative;
                         top: 30px;
-                        left: 24px;
+                        
                         padding-top: 23px;
+                        padding-left: 18px;
                     }
             }
         
@@ -166,12 +176,11 @@ img {
         top: -35%;
         right: 2%;
     }
-    
-
 
     @include sp {
         position: relative;
-        top: -420px;
+        top: -350px;
+        right: 0;
     }
     /* テイクアウト文章1 */
     &-1 {
@@ -181,6 +190,12 @@ img {
         top: 0;
         right: 10%;
         width: 75%;
+        @include tb {
+        
+            right: 0;
+            width: 85%;
+            
+        }
       
         @include sp {
             left: 0;
@@ -197,6 +212,12 @@ img {
         top: 0;
         right: 10%;
         width: 75%;
+        @include tb {
+        
+            right: 0;
+            width: 85%;
+            
+        }
     
         @include sp {
             left: 0;
@@ -220,7 +241,8 @@ img {
     }
     @include sp {
         position: relative;
-        top: -700px;
+        top: -375px;
+        left: 0;
     }
     /* イートイン文章1 */
     &-1 {
@@ -230,6 +252,12 @@ img {
         top: 0;
         right: 10%;
         width: 75%;
+        @include tb {
+        
+            left: 8%;
+            width: 85%;
+            
+        }
         
         @include sp {
             left: 0px;
@@ -245,6 +273,12 @@ img {
         top: 0;
         right: 10%;
         width: 75%;
+        @include tb {
+        
+            left: 8%;
+            width: 85%;
+            
+        }
         
         @include sp {
             left: 0px;
@@ -259,25 +293,37 @@ img {
 /* project */
 /* ハンバーガーのロゴの位置*/
 .p-header-left h1 {
-    position: relative;
-    top: 26px;
-    left: 6%;
+    position: absolute;
+    top: 20px;
+    left: 3%;
     
     @include tb {
+        
         left: 34%;
+    }
+    @include sp {
+        left: 25%;
     }
         
     
 }
 /* 検索バーの位置 */
 .p-header-right {
-    position: relative;
-    top: 86px;
-    right: 397px;
+    position: absolute;
+    top: 130px;
+    left: 45%;
     @include tb {
-        right: -30%;
+        top: 11%;
+        left: 30%;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
-}
+    @include sp {
+        top: 7%;
+        left: 20%;
+    }
+
+}   
 
 .p-header-top-image {
     padding-top: 10%;
@@ -291,15 +337,13 @@ img {
     padding-right: 2%;
     @include tb {
         padding-left: 4%;
-        padding-right: 4%;
+    
     }
     
     
-    @include tb {
-        padding: 0 40px;
-    }
+
     @include sp {
-        flex-direction: column;
+        display: block;
         padding: 0 20px;
     }
     /* テイクアウト */
@@ -340,25 +384,12 @@ img {
 /* サイド側のハンバーガーメニュー */
 .p-hamburger-menu {
     font-family: 'Roboto', sans-serif;
-    font-size: 34px;
+    font-size: 25px;
 
 
 }
 
-.c-menu {
-    color: #303030;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-size: 24px;
-    @include tb {
-        font-size: 20px;
-    }
-        li {
-            font-size: 20px;
-            @include tb {
-                font-size: 17px;
-            }
-        }
-}
+
 
 /* component */
 
@@ -372,6 +403,15 @@ img {
     &-top {
         width: 100%;
         height: auto;
+        margin-top: 10%;
+        @include tb {
+            margin-top: 20%;
+        }
+        @include sp {
+            padding-top: 40%;
+            height: 20rem;
+            object-fit: cover;
+        }
     }
     /* トップ画像のテキスト */
     &-text-top {
@@ -384,7 +424,12 @@ img {
    
         @include tb {
                 font-size: 36px;
+                top: 45%;
         
+        }
+        @include sp {
+            top: 55%;
+            font-size: 28px;
         }
 
     }
@@ -394,8 +439,13 @@ img {
         width: 100%;
         height: auto;
         padding-right: 40px;
+        @include tb {
+            padding-right: 5px;
+        }
         @include sp {
             padding-right: 0px;
+            margin-top: 30%;
+            margin-bottom: 20%; 
         }
 
 
@@ -414,6 +464,9 @@ img {
             font-size: 44px;
             top: 10%; 
         }
+        @include sp {
+            top: 20%;
+        }
     }
     
     /* イートイン側 */
@@ -422,6 +475,9 @@ img {
         width: 100%;
         height: auto;
         padding-left: 40px;
+        @include tb {
+            padding-left: 5px;
+        }
         @include sp {
             padding-left: 0px;
             position: relative;
@@ -446,7 +502,8 @@ img {
         }
         @include sp {
             position: relative;
-            top: -130px; 
+            top: -130px;
+            left: 0; 
         }
     }
 }
@@ -464,32 +521,41 @@ img {
 
 /* 検索フォーム*/
 .c-form{
-    position: relative;
+    position: absolute;
     bottom: 40px;
-    margin-bottom: 20px;	
+    margin-bottom: 20px;
+    right: 0;
+    
+    @include tb {
+        position: absolute;
+        margin-bottom: 20px;
+    }	
     
     &-sbox5{	
             outline: 0;	
-            height: 46px;
+            height: auto;
             padding: 0 10px; 
-            position: absolute; 
+            position: absolute;
+            padding: 25%; 
             left: 0;
-            top: 0; 
+            
             max-width: 270px;
             border-radius: 10px;
             background:#ffffff;
             border: 1px solid #707070;
             @include tb {
-                width: 396px;
-                max-width: 600px;
-                left: -20%;
+                width: 200px;
+                
+            }
+            @include sp {
+                width: 200px;
             }
     }
     &-sbtn5{
-            width: 136px;
-            height: 46px;
+            width: 110px;
+            height: 42px;
             position: absolute; 
-            left: 230px; 
+            left: 220px; 
             top: 0;
             border-radius: 10px;
             background: #F2EDE9;
@@ -498,7 +564,12 @@ img {
             font-size: 16px;
             border: 1px solid #707070;
             @include tb {
-                left: 40%;
+                margin-left: 0px;
+                width: 75px;
+                left: 210px;
+            }
+            @include sp {
+                margin-left: 0;
             }
     }
     &-sbtn5:hover{
@@ -516,7 +587,7 @@ img {
     position: relative;
     top: 6px;
     @include tb {
-        left: -20%;
+        left: 0;
     }
 }
 
@@ -531,7 +602,7 @@ img {
 /* aside */
 .c-menu {
     color: #303030;
-    font-size: 24px;
+    font-size: 17px;
     font-family: 'M PLUS 1p', sans-serif;
     @include tb {
         font-size: 20px;
@@ -539,7 +610,7 @@ img {
         left: 40px;
     }
     li {
-        font-size: 20px;
+        font-size: 15px;
         list-style-type: none;
         @include tb {
             font-size: 17px;
@@ -548,6 +619,7 @@ img {
         }
     }
 }
+
 
 
 /* 文字とgooglemap */
@@ -576,21 +648,23 @@ img {
     }
     p {
         color: white;
-        position: relative;
-        top: 5%;
+        position: absolute;
+        top: 30%;
         left: 5%;
         @include tb {
             font-size: 14px;
+            
         }
 
     }
     h2 {
         color: white;
-        position: relative;
+        position: absolute;
         top: 5%;
         left: 5%;
         @include tb {
             font-size: 30px;
+        
         }
 
     }
@@ -626,9 +700,7 @@ iframe{
 /* body((header+aside)+footer) */
 .wrapper {
     position: relative;
-    @include tb {
-        max-height: 1826px;
-    }
+    
 }
 
 
@@ -733,7 +805,7 @@ iframe{
     display: block;
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 5px;
     width: 55px;
     height: 40px;
     padding: 5px;

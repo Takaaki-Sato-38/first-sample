@@ -12,7 +12,13 @@ h1 {
 
 @media (max-width: 834px) {
   h1 {
-    font-size: 40px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 32px;
   }
 }
 
@@ -101,52 +107,52 @@ img {
 .l-body-aside-menu {
   position: relative;
   top: 82px;
-  left: 46px;
+  padding-left: 46px;
 }
 
 .l-body-aside-hamburger {
   position: relative;
   top: 82px;
-  left: 46px;
   padding-top: 30px;
   padding-bottom: 50px;
+  padding-left: 46px;
 }
 
 .l-body-aside-hamburger li {
   position: relative;
   top: 30px;
-  left: 24px;
   padding-top: 23px;
+  padding-left: 18px;
 }
 
 .l-body-aside-side-menu {
   position: relative;
   top: 82px;
-  left: 46px;
   padding-top: 30px;
   padding-bottom: 50px;
+  padding-left: 46px;
 }
 
 .l-body-aside-side-menu li {
   position: relative;
   top: 30px;
-  left: 24px;
   padding-top: 23px;
+  padding-left: 18px;
 }
 
 .l-body-aside-drink-menu {
   position: relative;
   top: 82px;
-  left: 46px;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 46px;
 }
 
 .l-body-aside-drink-menu li {
   position: relative;
   top: 30px;
-  left: 24px;
   padding-top: 23px;
+  padding-left: 18px;
 }
 
 .l-footer {
@@ -185,7 +191,8 @@ img {
 @media (max-width: 375px) {
   .l-takeout-text {
     position: relative;
-    top: -420px;
+    top: -350px;
+    right: 0;
   }
 }
 
@@ -196,6 +203,13 @@ img {
   top: 0;
   right: 10%;
   width: 75%;
+}
+
+@media (max-width: 834px) {
+  .l-takeout-text-1 {
+    right: 0;
+    width: 85%;
+  }
 }
 
 @media (max-width: 375px) {
@@ -213,6 +227,13 @@ img {
   top: 0;
   right: 10%;
   width: 75%;
+}
+
+@media (max-width: 834px) {
+  .l-takeout-text-2 {
+    right: 0;
+    width: 85%;
+  }
 }
 
 @media (max-width: 375px) {
@@ -244,7 +265,8 @@ img {
 @media (max-width: 375px) {
   .l-eatin-text {
     position: relative;
-    top: -700px;
+    top: -375px;
+    left: 0;
   }
 }
 
@@ -255,6 +277,13 @@ img {
   top: 0;
   right: 10%;
   width: 75%;
+}
+
+@media (max-width: 834px) {
+  .l-eatin-text-1 {
+    left: 8%;
+    width: 85%;
+  }
 }
 
 @media (max-width: 375px) {
@@ -274,6 +303,13 @@ img {
   width: 75%;
 }
 
+@media (max-width: 834px) {
+  .l-eatin-text-2 {
+    left: 8%;
+    width: 85%;
+  }
+}
+
 @media (max-width: 375px) {
   .l-eatin-text-2 {
     left: 0px;
@@ -285,9 +321,9 @@ img {
 /* project */
 /* ハンバーガーのロゴの位置*/
 .p-header-left h1 {
-  position: relative;
-  top: 26px;
-  left: 6%;
+  position: absolute;
+  top: 20px;
+  left: 3%;
 }
 
 @media (max-width: 834px) {
@@ -296,16 +332,32 @@ img {
   }
 }
 
+@media (max-width: 375px) {
+  .p-header-left h1 {
+    left: 25%;
+  }
+}
+
 /* 検索バーの位置 */
 .p-header-right {
-  position: relative;
-  top: 86px;
-  right: 397px;
+  position: absolute;
+  top: 130px;
+  left: 45%;
 }
 
 @media (max-width: 834px) {
   .p-header-right {
-    right: -30%;
+    top: 11%;
+    left: 30%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .p-header-right {
+    top: 7%;
+    left: 20%;
   }
 }
 
@@ -328,22 +380,12 @@ img {
 @media (max-width: 834px) {
   .p-header-choice {
     padding-left: 4%;
-    padding-right: 4%;
-  }
-}
-
-@media (max-width: 834px) {
-  .p-header-choice {
-    padding: 0 40px;
   }
 }
 
 @media (max-width: 375px) {
   .p-header-choice {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block;
     padding: 0 20px;
   }
 }
@@ -385,29 +427,7 @@ img {
 /* サイド側のハンバーガーメニュー */
 .p-hamburger-menu {
   font-family: 'Roboto', sans-serif;
-  font-size: 34px;
-}
-
-.c-menu {
-  color: #303030;
-  font-family: 'M PLUS 1p', sans-serif;
-  font-size: 24px;
-}
-
-@media (max-width: 834px) {
-  .c-menu {
-    font-size: 20px;
-  }
-}
-
-.c-menu li {
-  font-size: 20px;
-}
-
-@media (max-width: 834px) {
-  .c-menu li {
-    font-size: 17px;
-  }
+  font-size: 25px;
 }
 
 /* component */
@@ -424,6 +444,22 @@ img {
 .c-image-top {
   width: 100%;
   height: auto;
+  margin-top: 10%;
+}
+
+@media (max-width: 834px) {
+  .c-image-top {
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 375px) {
+  .c-image-top {
+    padding-top: 40%;
+    height: 20rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .c-image-text-top {
@@ -437,6 +473,14 @@ img {
 @media (max-width: 834px) {
   .c-image-text-top {
     font-size: 36px;
+    top: 45%;
+  }
+}
+
+@media (max-width: 375px) {
+  .c-image-text-top {
+    top: 55%;
+    font-size: 28px;
   }
 }
 
@@ -446,9 +490,17 @@ img {
   padding-right: 40px;
 }
 
+@media (max-width: 834px) {
+  .c-image-takeout {
+    padding-right: 5px;
+  }
+}
+
 @media (max-width: 375px) {
   .c-image-takeout {
     padding-right: 0px;
+    margin-top: 30%;
+    margin-bottom: 20%;
   }
 }
 
@@ -470,10 +522,22 @@ img {
   }
 }
 
+@media (max-width: 375px) {
+  .c-image-text-takeout {
+    top: 20%;
+  }
+}
+
 .c-image-eatin {
   width: 100%;
   height: auto;
   padding-left: 40px;
+}
+
+@media (max-width: 834px) {
+  .c-image-eatin {
+    padding-left: 5px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -506,6 +570,7 @@ img {
   .c-image-text-eatin {
     position: relative;
     top: -130px;
+    left: 0;
   }
 }
 
@@ -524,18 +589,26 @@ img {
 
 /* 検索フォーム*/
 .c-form {
-  position: relative;
+  position: absolute;
   bottom: 40px;
   margin-bottom: 20px;
+  right: 0;
+}
+
+@media (max-width: 834px) {
+  .c-form {
+    position: absolute;
+    margin-bottom: 20px;
+  }
 }
 
 .c-form-sbox5 {
   outline: 0;
-  height: 46px;
+  height: auto;
   padding: 0 10px;
   position: absolute;
+  padding: 25%;
   left: 0;
-  top: 0;
   max-width: 270px;
   border-radius: 10px;
   background: #ffffff;
@@ -544,17 +617,21 @@ img {
 
 @media (max-width: 834px) {
   .c-form-sbox5 {
-    width: 396px;
-    max-width: 600px;
-    left: -20%;
+    width: 200px;
+  }
+}
+
+@media (max-width: 375px) {
+  .c-form-sbox5 {
+    width: 200px;
   }
 }
 
 .c-form-sbtn5 {
-  width: 136px;
-  height: 46px;
+  width: 110px;
+  height: 42px;
   position: absolute;
-  left: 230px;
+  left: 220px;
   top: 0;
   border-radius: 10px;
   background: #F2EDE9;
@@ -566,7 +643,15 @@ img {
 
 @media (max-width: 834px) {
   .c-form-sbtn5 {
-    left: 40%;
+    margin-left: 0px;
+    width: 75px;
+    left: 210px;
+  }
+}
+
+@media (max-width: 375px) {
+  .c-form-sbtn5 {
+    margin-left: 0;
   }
 }
 
@@ -587,7 +672,7 @@ img {
 
 @media (max-width: 834px) {
   .c-search {
-    left: -20%;
+    left: 0;
   }
 }
 
@@ -605,7 +690,7 @@ img {
 /* aside */
 .c-menu {
   color: #303030;
-  font-size: 24px;
+  font-size: 17px;
   font-family: 'M PLUS 1p', sans-serif;
 }
 
@@ -618,7 +703,7 @@ img {
 }
 
 .c-menu li {
-  font-size: 20px;
+  font-size: 15px;
   list-style-type: none;
 }
 
@@ -658,8 +743,8 @@ img {
 
 .c-maptext p {
   color: white;
-  position: relative;
-  top: 5%;
+  position: absolute;
+  top: 30%;
   left: 5%;
 }
 
@@ -671,7 +756,7 @@ img {
 
 .c-maptext h2 {
   color: white;
-  position: relative;
+  position: absolute;
   top: 5%;
   left: 5%;
 }
@@ -712,12 +797,6 @@ iframe {
 /* body((header+aside)+footer) */
 .wrapper {
   position: relative;
-}
-
-@media (max-width: 834px) {
-  .wrapper {
-    max-height: 1826px;
-  }
 }
 
 /* レスポンシブデザインサイドメニュー */
@@ -812,7 +891,7 @@ iframe {
     display: block;
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 5px;
     width: 55px;
     height: 40px;
     padding: 5px;
