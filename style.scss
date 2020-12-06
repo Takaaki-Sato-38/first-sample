@@ -241,7 +241,7 @@ img {
     }
     @include sp {
         position: relative;
-        top: -375px;
+        top: -550px;
         left: 0;
     }
     /* イートイン文章1 */
@@ -462,7 +462,8 @@ img {
 
         @include tb {
             font-size: 44px;
-            top: 10%; 
+            top: 10%;
+            left: 10%; 
         }
         @include sp {
             top: 20%;
@@ -481,7 +482,7 @@ img {
         @include sp {
             padding-left: 0px;
             position: relative;
-            top: -300px;
+            top: -250px;
         }
         
 
@@ -503,19 +504,21 @@ img {
         @include sp {
             position: relative;
             top: -130px;
-            left: 0; 
+            left: 10%; 
         }
     }
 }
 /* テイクアウトとイートインの中の文章 */
-.c-image-on-text {
+.c-text-card {
     background-color: rgba($color:#ffffff, $alpha: 0.8);
 
      h3 {
          font-size: 24px;
+         padding: 5px;
      }
      p {
          font-size: 16px;
+         padding: 5px;
      }
 }
 
@@ -678,16 +681,16 @@ img {
     height: 100%;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
-}
+
 
 .iframe-wrapper{
     position: relative;
     height: 0;
     overflow: hidden;
     padding-top: 41.8%;
+    @include sp {
+        padding-top: 184.2%;
+    }
 }
 iframe{
     position: absolute;

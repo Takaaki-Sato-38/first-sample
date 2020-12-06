@@ -265,7 +265,7 @@ img {
 @media (max-width: 375px) {
   .l-eatin-text {
     position: relative;
-    top: -375px;
+    top: -550px;
     left: 0;
   }
 }
@@ -519,6 +519,7 @@ img {
   .c-image-text-takeout {
     font-size: 44px;
     top: 10%;
+    left: 10%;
   }
 }
 
@@ -544,7 +545,7 @@ img {
   .c-image-eatin {
     padding-left: 0px;
     position: relative;
-    top: -300px;
+    top: -250px;
   }
 }
 
@@ -570,21 +571,23 @@ img {
   .c-image-text-eatin {
     position: relative;
     top: -130px;
-    left: 0;
+    left: 10%;
   }
 }
 
 /* テイクアウトとイートインの中の文章 */
-.c-image-on-text {
+.c-text-card {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.c-image-on-text h3 {
+.c-text-card h3 {
   font-size: 24px;
+  padding: 5px;
 }
 
-.c-image-on-text p {
+.c-text-card p {
   font-size: 16px;
+  padding: 5px;
 }
 
 /* 検索フォーム*/
@@ -774,16 +777,17 @@ img {
   height: 100%;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .iframe-wrapper {
   position: relative;
   height: 0;
   overflow: hidden;
   padding-top: 41.8%;
+}
+
+@media (max-width: 375px) {
+  .iframe-wrapper {
+    padding-top: 184.2%;
+  }
 }
 
 iframe {
