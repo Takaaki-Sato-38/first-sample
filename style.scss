@@ -73,6 +73,7 @@ img {
         @include tb {
             width: 100%;
         }
+        /* 最上段からトップ画像の上まで① */
             &-top {
                 display: flex;
                 justify-content: space-between;
@@ -81,6 +82,7 @@ img {
                     
                     
                 }
+                
             }
             
 
@@ -152,6 +154,23 @@ img {
         
     }
 }
+/* トップ画像② */
+.l-header-top-image {
+        padding-top: 10%;
+        padding-bottom: 10%;
+}
+
+/* テイクアウトとイートインの横並び画像の中に文字が入る③ */
+.l-header-choice {
+    display: flex;
+    padding-left: 2%;
+    padding-right: 2%;
+    @include tb {
+        padding-left: 4%;
+    
+    }
+}  
+
 .l-footer {
     width: 100%;
     height: 150px;
@@ -168,8 +187,7 @@ img {
 /* テイクアウト側に入れる文章のレイアウト */
 .l-takeout-text {
     width: 100%;
-    position: relative;
-    top: -30%;
+
     z-index: 0;
     @include tb {
         position: relative;
@@ -229,8 +247,7 @@ img {
 /* イートイン側に入れる文章のレイアウト */
 .l-eatin-text {
     width: 100%;
-    position: relative;
-    top: -30%;
+
     z-index: 0;
 
 
@@ -325,21 +342,9 @@ img {
 
 }   
 
-.p-header-top-image {
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
 
-/* テイクアウトとイートインのラッパー */
-.p-header-choice {
-    display: flex;
-    padding-left: 2%;
-    padding-right: 2%;
-    @include tb {
-        padding-left: 4%;
-    
-    }
-    
+
+  
     
 
     @include sp {
@@ -347,40 +352,43 @@ img {
         padding: 0 20px;
     }
     /* テイクアウト */
-    .p-header-takeout {
-        width: 50%;
-        height: auto;
-        position: relative;
-        @include sp {
-            width: 100%;
-        }
-
-        
-        
-        
+.p-header-takeout {        
+    width: 50%;
+    height: auto;
+    position: relative;
+    background-image: url(images/takeout-image.jpg);
+    &-wrapper {
+        display: block;        
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
-    .p-header-takeout:before {
-        content: "";
-        display: block;
-    }
+    @include sp {
+        width: 100%;
+    }       
+}
+    
     /* イートイン */
-    .p-header-eatin {
-        width: 50%;
-        height: auto;
-        position: relative;
-
-        @include sp {
-            width: 100%;
-        }
-        
-
+.p-header-eatin {
+    width: 50%;
+    height: auto;
+    position: relative;
+    background-image: url(images/eat-in-image.jpg);
+    &-wrapper {
+        display: block;            
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
-
-    .p-header-eatin:before {
-        content: "";
-        display: block;
+    @include sp {
+        width: 100%;
     }
 }
+
 /* サイド側のハンバーガーメニュー */
 .p-hamburger-menu {
     font-family: 'Roboto', sans-serif;
@@ -450,10 +458,8 @@ img {
 
 
     }
-    &-text-takeout {
-        position: absolute;
-        top: 20%;
-        left: 2%;
+    &-logo-takeout {
+
         z-index: 100;
         color: #ffffff;
         font-size: 80px;
@@ -487,10 +493,8 @@ img {
         
 
     }
-    &-text-eatin {
-        position: absolute;
-        top: 20%;
-        left: 16%;
+    &-logo-eatin {
+
         z-index: 100;
         color: #ffffff;
         font-size: 80px;
@@ -622,18 +626,12 @@ img {
         }
     }
 }
-
-
-
-/* 文字とgooglemap */
-
-
-.p-map {
+/* Google マップに文字を重ねます④ */
+.l-map {
     width: 100%;
     height: auto;
     position: relative;
-    bottom: 150px;
-    
+    bottom: 150px;   
 }
 
 .c-maptext {
