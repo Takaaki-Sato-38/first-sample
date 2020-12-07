@@ -201,14 +201,6 @@ img {
   /* テイクアウト文章2 */
 }
 
-@media (max-width: 834px) {
-  .l-takeout-text {
-    position: relative;
-    top: -35%;
-    right: 2%;
-  }
-}
-
 @media (max-width: 375px) {
   .l-takeout-text {
     position: relative;
@@ -221,13 +213,6 @@ img {
   position: relative;
   left: 4%;
   width: 92%;
-}
-
-@media (max-width: 834px) {
-  .l-takeout-text-1 {
-    right: 0;
-    width: 85%;
-  }
 }
 
 @media (max-width: 375px) {
@@ -243,13 +228,6 @@ img {
   left: 4%;
   width: 92%;
   margin-top: 2%;
-}
-
-@media (max-width: 834px) {
-  .l-takeout-text-2 {
-    right: 0;
-    width: 85%;
-  }
 }
 
 @media (max-width: 375px) {
@@ -522,7 +500,7 @@ img {
 .c-image-logo-takeout {
   z-index: 100;
   color: #ffffff;
-  font-size: 44px;
+  font-size: 5.15vw;
   line-height: 1.325;
   display: block;
   padding-bottom: 38%;
@@ -532,9 +510,7 @@ img {
 
 @media (max-width: 834px) {
   .c-image-logo-takeout {
-    font-size: 44px;
-    top: 10%;
-    left: 10%;
+    font-size: 5.27vw;
   }
 }
 

@@ -190,11 +190,6 @@ img {
     width: 100%;
     margin-bottom: 5%;
     z-index: 0;
-    @include tb {
-        position: relative;
-        top: -35%;
-        right: 2%;
-    }
 
     @include sp {
         position: relative;
@@ -208,13 +203,7 @@ img {
         left: 4%;
 
         width: 92%;
-        @include tb {
-        
-            right: 0;
-            width: 85%;
-            
-        }
-      
+
         @include sp {
             left: 0;
             right: 0;
@@ -229,13 +218,7 @@ img {
 
         width: 92%;
         margin-top: 2%;
-        @include tb {
-        
-            right: 0;
-            width: 85%;
-            
-        }
-    
+
         @include sp {
             left: 0;
             right: 0;
@@ -461,7 +444,7 @@ img {
 
         z-index: 100;
         color: #ffffff;
-        font-size: 44px;
+        font-size: 5.15vw;
         line-height: 1.325;
         display: block;
         padding-bottom: 38%;
@@ -469,9 +452,7 @@ img {
         padding-left: 3%;
 
         @include tb {
-            font-size: 44px;
-            top: 10%;
-            left: 10%; 
+            font-size: 5.27vw;
         }
         @include sp {
             top: 20%;
