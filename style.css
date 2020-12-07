@@ -169,6 +169,7 @@ img {
   display: flex;
   padding-left: 2%;
   padding-right: 2%;
+  padding-bottom: 6%;
 }
 
 @media (max-width: 834px) {
@@ -181,7 +182,6 @@ img {
   width: 100%;
   height: 150px;
   background-color: #9D8670;
-  position: absolute;
   bottom: 0;
   z-index: 5;
 }
@@ -195,6 +195,7 @@ img {
 /* テイクアウト側に入れる文章のレイアウト */
 .l-takeout-text {
   width: 100%;
+  margin-bottom: 5%;
   z-index: 0;
   /* テイクアウト文章1 */
   /* テイクアウト文章2 */
@@ -218,11 +219,8 @@ img {
 
 .l-takeout-text-1 {
   position: relative;
-  bottom: 25%;
-  left: 9%;
-  top: 0;
-  right: 10%;
-  width: 75%;
+  left: 4%;
+  width: 92%;
 }
 
 @media (max-width: 834px) {
@@ -242,11 +240,9 @@ img {
 
 .l-takeout-text-2 {
   position: relative;
-  bottom: 25%;
-  left: 9%;
-  top: 0;
-  right: 10%;
-  width: 75%;
+  left: 4%;
+  width: 92%;
+  margin-top: 2%;
 }
 
 @media (max-width: 834px) {
@@ -395,7 +391,6 @@ img {
 .p-header-takeout-wrapper {
   display: block;
   width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,9 +522,12 @@ img {
 .c-image-logo-takeout {
   z-index: 100;
   color: #ffffff;
-  font-size: 80px;
+  font-size: 44px;
   line-height: 1.325;
   display: block;
+  padding-bottom: 38%;
+  padding-top: 2%;
+  padding-left: 3%;
 }
 
 @media (max-width: 834px) {
@@ -737,7 +735,6 @@ img {
   width: 100%;
   height: auto;
   position: relative;
-  bottom: 150px;
 }
 
 .c-maptext {

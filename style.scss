@@ -165,6 +165,7 @@ img {
     display: flex;
     padding-left: 2%;
     padding-right: 2%;
+    padding-bottom: 6%;
     @include tb {
         padding-left: 4%;
     
@@ -175,7 +176,7 @@ img {
     width: 100%;
     height: 150px;
     background-color: #9D8670;
-    position: absolute;
+
     bottom: 0;
     z-index: 5;
     p {
@@ -187,7 +188,7 @@ img {
 /* テイクアウト側に入れる文章のレイアウト */
 .l-takeout-text {
     width: 100%;
-
+    margin-bottom: 5%;
     z-index: 0;
     @include tb {
         position: relative;
@@ -203,11 +204,10 @@ img {
     /* テイクアウト文章1 */
     &-1 {
         position: relative;
-        bottom: 25%;
-        left: 9%;
-        top: 0;
-        right: 10%;
-        width: 75%;
+
+        left: 4%;
+
+        width: 92%;
         @include tb {
         
             right: 0;
@@ -225,11 +225,10 @@ img {
     /* テイクアウト文章2 */
     &-2 {
         position: relative;
-        bottom: 25%;
-        left: 9%;
-        top: 0;
-        right: 10%;
-        width: 75%;
+        left: 4%;
+
+        width: 92%;
+        margin-top: 2%;
         @include tb {
         
             right: 0;
@@ -360,7 +359,7 @@ img {
     &-wrapper {
         display: block;        
         width: 100%;
-        height: 100%;
+        
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -462,9 +461,12 @@ img {
 
         z-index: 100;
         color: #ffffff;
-        font-size: 80px;
+        font-size: 44px;
         line-height: 1.325;
         display: block;
+        padding-bottom: 38%;
+        padding-top: 2%;
+        padding-left: 3%;
 
         @include tb {
             font-size: 44px;
@@ -631,7 +633,7 @@ img {
     width: 100%;
     height: auto;
     position: relative;
-    bottom: 150px;   
+ 
 }
 
 .c-maptext {
