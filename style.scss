@@ -23,13 +23,13 @@ $sp: 375px; // スマートフォン用のブレイクポイント
 
 
 h1 {
-    font-size: 64px;
+    font-size: 3.33vw;
     font-family: 'Roboto', sans-serif;
     @include tb {        
-            font-size: 36px;    
+            font-size: 4.80vw;    
     }
     @include sp {
-        font-size: 32px;
+        font-size: 10.67vw;
     }
 }
 
@@ -156,8 +156,10 @@ img {
 }
 /* トップ画像② */
 .l-header-top-image {
-        padding-top: 10%;
         padding-bottom: 10%;
+        @include sp {
+            padding-top: 45%;
+        }
 }
 
 /* テイクアウトとイートインの横並び画像の中に文字が入る③ */
@@ -169,6 +171,12 @@ img {
     @include tb {
         padding-left: 4%;
     
+    }
+    @include sp {
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+
     }
 }  
 
@@ -191,11 +199,7 @@ img {
     margin-bottom: 5%;
     z-index: 0;
 
-    @include sp {
-        position: relative;
-        top: -350px;
-        right: 0;
-    }
+
     /* テイクアウト文章1 */
     &-1 {
         position: relative;
@@ -204,11 +208,7 @@ img {
 
         width: 92%;
 
-        @include sp {
-            left: 0;
-            right: 0;
-            width: 100%;
-        }
+
     }
 
     /* テイクアウト文章2 */
@@ -219,72 +219,27 @@ img {
         width: 92%;
         margin-top: 2%;
 
-        @include sp {
-            left: 0;
-            right: 0;
-            width: 100%;
-        }
+
     }
 }
 /* イートイン側に入れる文章のレイアウト */
 .l-eatin-text {
     width: 100%;
-
+    margin-bottom: 5%;
     z-index: 0;
-
-
-    @include tb {
-        position: relative;
-        top: -35%;
-        left: 2%;
-    }
-    @include sp {
-        position: relative;
-        top: -550px;
-        left: 0;
-    }
     /* イートイン文章1 */
     &-1 {
         position: relative;
-        bottom: 25%;
-        left: 16%;
-        top: 0;
-        right: 10%;
-        width: 75%;
-        @include tb {
-        
-            left: 8%;
-            width: 85%;
-            
+        left: 4%;
+        width: 92%;
         }
-        
-        @include sp {
-            left: 0px;
-            right: 0px;
-            width: 100%;
-        }
-    }
     /* イートイン文章2 */
     &-2 {
         position: relative;
-        bottom: 25%;
-        left: 16%;
-        top: 0;
-        right: 10%;
-        width: 75%;
-        @include tb {
-        
-            left: 8%;
-            width: 85%;
-            
+        left: 4%;
+        width: 92%;
+        margin-top: 2%;
         }
-        
-        @include sp {
-            left: 0px;
-            right: 0px;
-            width: 100%;
-        }
-    }
 }
 
 
@@ -293,52 +248,43 @@ img {
 /* ハンバーガーのロゴの位置*/
 .p-header-left h1 {
     position: absolute;
-    top: 20px;
-    left: 3%;
+    top: 2%;
+    left: 2%;
     
     @include tb {
         
-        left: 34%;
+        left: 40%;
     }
     @include sp {
-        left: 25%;
+        left: 22%;
     }
         
     
 }
 /* 検索バーの位置 */
 .p-header-right {
-    position: absolute;
-    top: 130px;
-    left: 45%;
+    margin-top: 2%;
+    margin-right: 3%;
     @include tb {
-        top: 11%;
-        left: 30%;
-        margin-bottom: 30px;
-        margin-top: 30px;
+        position: absolute;
+        left: 18%;
+        margin-top: 7%;
     }
     @include sp {
-        top: 7%;
-        left: 20%;
+        margin-top: 18%;
+        left: 9%;
     }
 
 }   
 
-
-
-  
-    
-
-    @include sp {
-        display: block;
-        padding: 0 20px;
-    }
     /* テイクアウト */
 .p-header-takeout {        
     width: 50%;
     height: auto;
     position: relative;
     background-image: url(images/takeout-image.jpg);
+    margin-left: 9%;
+    margin-right: 3%;
     &-wrapper {
         display: block;        
         width: 100%;
@@ -348,7 +294,10 @@ img {
         justify-content: space-between;
     }
     @include sp {
-        width: 100%;
+        width: 92%;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 10%;
     }       
 }
     
@@ -358,6 +307,8 @@ img {
     height: auto;
     position: relative;
     background-image: url(images/eat-in-image.jpg);
+    margin-left: 3%;
+    margin-right: 9%;
     &-wrapper {
         display: block;            
         width: 100%;
@@ -368,6 +319,9 @@ img {
     }
     @include sp {
         width: 100%;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 10%;
     }
 }
 
@@ -387,20 +341,29 @@ img {
 .c-image {
     width: 100%;
     position: relative;
+    @include sp {
+        width: auto;
+    }
     
     
     /* トップ画像 */
     &-top {
         width: 100%;
         height: auto;
-        margin-top: 10%;
+        margin-top: 4%;
         @include tb {
             margin-top: 20%;
         }
         @include sp {
-            padding-top: 40%;
-            height: 20rem;
-            object-fit: cover;
+            display: none;
+        }
+    }
+    &-top-sp {
+        display: none;
+        @include sp {
+            display: block;
+            width: 100%;
+            height: auto;
         }
     }
     /* トップ画像のテキスト */
@@ -410,16 +373,17 @@ img {
         left: 10%;
 
         color: #ffffff;
-        font-size: 40px;
+        font-size: 2.1vw;
    
         @include tb {
-                font-size: 36px;
+                font-size: 4.32vw;
                 top: 45%;
         
         }
         @include sp {
             top: 55%;
-            font-size: 28px;
+            font-size: 9.8vw;
+            left: 7%;
         }
 
     }
@@ -455,7 +419,8 @@ img {
             font-size: 5.27vw;
         }
         @include sp {
-            top: 20%;
+            font-size: 10.9vw;
+            top: 2%;
         }
     }
     
@@ -480,19 +445,22 @@ img {
 
         z-index: 100;
         color: #ffffff;
-        font-size: 80px;
+        font-size: 5.15vw;
         line-height: 1.325;
         display: block;
+        padding-bottom: 38%;
+        padding-top: 2%;
+        padding-left: 3%;
 
         @include tb {
-            font-size: 44px;
-            top: 10%; 
+            font-size: 5.27vw;
         }
         @include sp {
-            position: relative;
-            top: -130px;
-            left: 10%; 
+            font-size: 10.9vw;
+            top: 2%;
+            
         }
+
     }
 }
 /* テイクアウトとイートインの中の文章 */
@@ -500,41 +468,37 @@ img {
     background-color: rgba($color:#ffffff, $alpha: 0.8);
 
      h3 {
-         font-size: 24px;
+         font-size: 1.54vw;
          padding: 5px;
      }
      p {
-         font-size: 16px;
+         font-size: 1.0vw;
          padding: 5px;
      }
 }
 
 /* 検索フォーム*/
 .c-form{
-    position: absolute;
-    bottom: 40px;
-    margin-bottom: 20px;
-    right: 0;
+    display: flex;
+    margin-top: 6%;
     
     @include tb {
-        position: absolute;
-        margin-bottom: 20px;
+        margin-top: 8%;
     }	
-    
+    @include sp {
+        margin-top: 16%;
+    }
     &-sbox5{	
             outline: 0;	
-            height: auto;
-            padding: 0 10px; 
-            position: absolute;
-            padding: 25%; 
+
             left: 0;
-            
-            max-width: 270px;
+            width: 20.1vw;
             border-radius: 10px;
             background:#ffffff;
             border: 1px solid #707070;
+            padding-bottom: 2%;
             @include tb {
-                width: 200px;
+                width: 47.4vw;
                 
             }
             @include sp {
@@ -542,11 +506,8 @@ img {
             }
     }
     &-sbtn5{
-            width: 110px;
-            height: 42px;
-            position: absolute; 
-            left: 220px; 
-            top: 0;
+            width: 7vw;
+            margin-left: 2%;
             border-radius: 10px;
             background: #F2EDE9;
             color:#707070;
@@ -554,9 +515,8 @@ img {
             font-size: 16px;
             border: 1px solid #707070;
             @include tb {
-                margin-left: 0px;
-                width: 75px;
-                left: 210px;
+                margin-left: 2%;
+                width: 16.3vw;
             }
             @include sp {
                 margin-left: 0;
@@ -574,8 +534,7 @@ img {
     z-index: 2;
     position: absolute;
     color: #707070;
-    position: relative;
-    top: 6px;
+
     @include tb {
         left: 0;
     }

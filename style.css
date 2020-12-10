@@ -6,19 +6,19 @@
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 3.33vw;
   font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 834px) {
   h1 {
-    font-size: 36px;
+    font-size: 4.80vw;
   }
 }
 
 @media (max-width: 375px) {
   h1 {
-    font-size: 32px;
+    font-size: 10.67vw;
   }
 }
 
@@ -158,8 +158,13 @@ img {
 
 /* トップ画像② */
 .l-header-top-image {
-  padding-top: 10%;
   padding-bottom: 10%;
+}
+
+@media (max-width: 375px) {
+  .l-header-top-image {
+    padding-top: 45%;
+  }
 }
 
 /* テイクアウトとイートインの横並び画像の中に文字が入る③ */
@@ -175,6 +180,14 @@ img {
 @media (max-width: 834px) {
   .l-header-choice {
     padding-left: 4%;
+  }
+}
+
+@media (max-width: 375px) {
+  .l-header-choice {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -201,26 +214,10 @@ img {
   /* テイクアウト文章2 */
 }
 
-@media (max-width: 375px) {
-  .l-takeout-text {
-    position: relative;
-    top: -350px;
-    right: 0;
-  }
-}
-
 .l-takeout-text-1 {
   position: relative;
   left: 4%;
   width: 92%;
-}
-
-@media (max-width: 375px) {
-  .l-takeout-text-1 {
-    left: 0;
-    right: 0;
-    width: 100%;
-  }
 }
 
 .l-takeout-text-2 {
@@ -230,132 +227,67 @@ img {
   margin-top: 2%;
 }
 
-@media (max-width: 375px) {
-  .l-takeout-text-2 {
-    left: 0;
-    right: 0;
-    width: 100%;
-  }
-}
-
 /* イートイン側に入れる文章のレイアウト */
 .l-eatin-text {
   width: 100%;
+  margin-bottom: 5%;
   z-index: 0;
   /* イートイン文章1 */
   /* イートイン文章2 */
 }
 
-@media (max-width: 834px) {
-  .l-eatin-text {
-    position: relative;
-    top: -35%;
-    left: 2%;
-  }
-}
-
-@media (max-width: 375px) {
-  .l-eatin-text {
-    position: relative;
-    top: -550px;
-    left: 0;
-  }
-}
-
 .l-eatin-text-1 {
   position: relative;
-  bottom: 25%;
-  left: 16%;
-  top: 0;
-  right: 10%;
-  width: 75%;
-}
-
-@media (max-width: 834px) {
-  .l-eatin-text-1 {
-    left: 8%;
-    width: 85%;
-  }
-}
-
-@media (max-width: 375px) {
-  .l-eatin-text-1 {
-    left: 0px;
-    right: 0px;
-    width: 100%;
-  }
+  left: 4%;
+  width: 92%;
 }
 
 .l-eatin-text-2 {
   position: relative;
-  bottom: 25%;
-  left: 16%;
-  top: 0;
-  right: 10%;
-  width: 75%;
-}
-
-@media (max-width: 834px) {
-  .l-eatin-text-2 {
-    left: 8%;
-    width: 85%;
-  }
-}
-
-@media (max-width: 375px) {
-  .l-eatin-text-2 {
-    left: 0px;
-    right: 0px;
-    width: 100%;
-  }
+  left: 4%;
+  width: 92%;
+  margin-top: 2%;
 }
 
 /* project */
 /* ハンバーガーのロゴの位置*/
 .p-header-left h1 {
   position: absolute;
-  top: 20px;
-  left: 3%;
+  top: 2%;
+  left: 2%;
 }
 
 @media (max-width: 834px) {
   .p-header-left h1 {
-    left: 34%;
+    left: 40%;
   }
 }
 
 @media (max-width: 375px) {
   .p-header-left h1 {
-    left: 25%;
+    left: 22%;
   }
 }
 
 /* 検索バーの位置 */
 .p-header-right {
-  position: absolute;
-  top: 130px;
-  left: 45%;
+  margin-top: 2%;
+  margin-right: 3%;
 }
 
 @media (max-width: 834px) {
   .p-header-right {
-    top: 11%;
-    left: 30%;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    position: absolute;
+    left: 18%;
+    margin-top: 7%;
   }
 }
 
 @media (max-width: 375px) {
   .p-header-right {
-    top: 7%;
-    left: 20%;
+    margin-top: 18%;
+    left: 9%;
   }
-}
-
-@media (max-width: 375px) {
-  display: block;
-  padding: 0 20px;
 }
 
 /* テイクアウト */
@@ -364,6 +296,8 @@ img {
   height: auto;
   position: relative;
   background-image: url(images/takeout-image.jpg);
+  margin-left: 9%;
+  margin-right: 3%;
 }
 
 .p-header-takeout-wrapper {
@@ -383,7 +317,10 @@ img {
 
 @media (max-width: 375px) {
   .p-header-takeout {
-    width: 100%;
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 10%;
   }
 }
 
@@ -393,6 +330,8 @@ img {
   height: auto;
   position: relative;
   background-image: url(images/eat-in-image.jpg);
+  margin-left: 3%;
+  margin-right: 9%;
 }
 
 .p-header-eatin-wrapper {
@@ -414,6 +353,9 @@ img {
 @media (max-width: 375px) {
   .p-header-eatin {
     width: 100%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 10%;
   }
 }
 
@@ -434,10 +376,16 @@ img {
   /* イートイン側 */
 }
 
+@media (max-width: 375px) {
+  .c-image {
+    width: auto;
+  }
+}
+
 .c-image-top {
   width: 100%;
   height: auto;
-  margin-top: 10%;
+  margin-top: 4%;
 }
 
 @media (max-width: 834px) {
@@ -448,10 +396,19 @@ img {
 
 @media (max-width: 375px) {
   .c-image-top {
-    padding-top: 40%;
-    height: 20rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    display: none;
+  }
+}
+
+.c-image-top-sp {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .c-image-top-sp {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -460,12 +417,12 @@ img {
   top: 35%;
   left: 10%;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 2.1vw;
 }
 
 @media (max-width: 834px) {
   .c-image-text-top {
-    font-size: 36px;
+    font-size: 4.32vw;
     top: 45%;
   }
 }
@@ -473,7 +430,8 @@ img {
 @media (max-width: 375px) {
   .c-image-text-top {
     top: 55%;
-    font-size: 28px;
+    font-size: 9.8vw;
+    left: 7%;
   }
 }
 
@@ -516,7 +474,8 @@ img {
 
 @media (max-width: 375px) {
   .c-image-logo-takeout {
-    top: 20%;
+    font-size: 10.9vw;
+    top: 2%;
   }
 }
 
@@ -543,23 +502,24 @@ img {
 .c-image-logo-eatin {
   z-index: 100;
   color: #ffffff;
-  font-size: 80px;
+  font-size: 5.15vw;
   line-height: 1.325;
   display: block;
+  padding-bottom: 38%;
+  padding-top: 2%;
+  padding-left: 3%;
 }
 
 @media (max-width: 834px) {
   .c-image-logo-eatin {
-    font-size: 44px;
-    top: 10%;
+    font-size: 5.27vw;
   }
 }
 
 @media (max-width: 375px) {
   .c-image-logo-eatin {
-    position: relative;
-    top: -130px;
-    left: 10%;
+    font-size: 10.9vw;
+    top: 2%;
   }
 }
 
@@ -569,46 +529,48 @@ img {
 }
 
 .c-text-card h3 {
-  font-size: 24px;
+  font-size: 1.54vw;
   padding: 5px;
 }
 
 .c-text-card p {
-  font-size: 16px;
+  font-size: 1.0vw;
   padding: 5px;
 }
 
 /* 検索フォーム*/
 .c-form {
-  position: absolute;
-  bottom: 40px;
-  margin-bottom: 20px;
-  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 6%;
 }
 
 @media (max-width: 834px) {
   .c-form {
-    position: absolute;
-    margin-bottom: 20px;
+    margin-top: 8%;
+  }
+}
+
+@media (max-width: 375px) {
+  .c-form {
+    margin-top: 16%;
   }
 }
 
 .c-form-sbox5 {
   outline: 0;
-  height: auto;
-  padding: 0 10px;
-  position: absolute;
-  padding: 25%;
   left: 0;
-  max-width: 270px;
+  width: 20.1vw;
   border-radius: 10px;
   background: #ffffff;
   border: 1px solid #707070;
+  padding-bottom: 2%;
 }
 
 @media (max-width: 834px) {
   .c-form-sbox5 {
-    width: 200px;
+    width: 47.4vw;
   }
 }
 
@@ -619,11 +581,8 @@ img {
 }
 
 .c-form-sbtn5 {
-  width: 110px;
-  height: 42px;
-  position: absolute;
-  left: 220px;
-  top: 0;
+  width: 7vw;
+  margin-left: 2%;
   border-radius: 10px;
   background: #F2EDE9;
   color: #707070;
@@ -634,9 +593,8 @@ img {
 
 @media (max-width: 834px) {
   .c-form-sbtn5 {
-    margin-left: 0px;
-    width: 75px;
-    left: 210px;
+    margin-left: 2%;
+    width: 16.3vw;
   }
 }
 
@@ -657,8 +615,6 @@ img {
   z-index: 2;
   position: absolute;
   color: #707070;
-  position: relative;
-  top: 6px;
 }
 
 @media (max-width: 834px) {
