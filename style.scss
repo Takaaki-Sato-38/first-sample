@@ -606,9 +606,7 @@ img {
     width: 100%;
     height: auto;
     position: relative;
-    @include sp {
-        display: none;
-    }
+
  
 }
 
@@ -626,20 +624,22 @@ img {
         width: 100%;
     }
     @include sp {
-        display: none;
+        height: 50%;
     }
     p {
         color: white;
         position: absolute;
         top: 30%;
-        left: 5%;
+        
         font-size: 1.3vw;
+        padding-left: 4%;
+        padding-right: 4%;
         @include tb {
             font-size: 1.7vw;
             
         }
         @include sp {
-            display: none;
+            font-size: 3.7vw;
         }
 
     }
@@ -654,7 +654,7 @@ img {
         
         }
         @include sp {
-            display: none;
+            font-size: 8.0vw;
         }
     }
 
@@ -670,6 +670,21 @@ img {
     }
 }
 
+.c-googlemap-sp {
+    display: none;
+    @include tb {
+        display: none;
+    }
+    @include sp {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+}
+
 
 
 .iframe-wrapper{
@@ -678,7 +693,7 @@ img {
     overflow: hidden;
     padding-top: 41.8%;
     @include sp {
-        display: none;
+        padding-top: 100%;
     }
 }
 iframe{
@@ -692,61 +707,7 @@ iframe{
     }
 }
 
-/* mapスマホサイズ */
-.l-map-sp {
-    display: none;
-}
-.p-map-sp {
-    display: none;
-}
-.c-maptext-sp {
-    display: none;
-}
-@include sp {
-    .l-map-sp {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    .p-map-sp {
-        display: block;
-        width: 100%;
-        height: auto;
-        background-image: url(images/map-sp.jpg);
-        
-        padding-bottom: 55%;
-    }
-    .c-map-sp {
-        position: relative;
-    }
-    .c-maptext-sp {
-        display: block;
-        
-        margin-left: 4%;
-        margin-right: 4%;
-        padding-bottom: 4%;
-        h2 {
-            color: white;
-            font-size: 8.0vw;
-        }
-        p {
-            color: white;
-            font-size: 3.7vw;
-        }
 
-    }
-    .p-map-sp-wrapper {
-        
-        background-image: url(images/map-sp-wrapper.jpg);
-        
-        top: 0;
-        width: 100%;
-        height: auto;
-        padding-top: 25%;
-        background-color: #333333;
-        opacity: 0.7;
-    }
-}
 
 /* body((header+aside)+footer) */
 .wrapper {
