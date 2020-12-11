@@ -101,13 +101,13 @@ img {
             &-menu {
                
                 position: relative;
-                top: 82px;
+                top: 4%;
                 padding-left: 46px;
                 
             }
             &-hamburger {
                 position: relative;
-                top: 82px;
+                top: 8%;
                 
                 padding-top: 30px;
                 padding-bottom: 50px;
@@ -122,7 +122,7 @@ img {
             }
             &-side-menu {
                 position: relative;
-                top: 82px;
+                top: 8%;
                 
                 padding-top: 30px;
                 padding-bottom: 50px;
@@ -138,7 +138,7 @@ img {
 
             &-drink-menu {
                 position: relative;
-                top: 82px;
+                top: 8%;
                 
                 padding-top: 30px;
                 padding-bottom: 30px;
@@ -182,16 +182,14 @@ img {
 
 .l-footer {
     width: 100%;
-    height: 150px;
+
     background-color: #9D8670;
 
     bottom: 0;
     z-index: 5;
-    p {
-        text-align: center;
-        color: #ffffff;
-        font-size: 20px;
-        }
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
 }
 /* テイクアウト側に入れる文章のレイアウト */
 .l-takeout-text {
@@ -328,7 +326,7 @@ img {
 /* サイド側のハンバーガーメニュー */
 .p-hamburger-menu {
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+    font-size: 1.7vw;
 
 
 }
@@ -352,7 +350,7 @@ img {
         height: auto;
         margin-top: 4%;
         @include tb {
-            margin-top: 20%;
+            margin-top: 24%;
         }
         @include sp {
             display: none;
@@ -364,6 +362,7 @@ img {
             display: block;
             width: 100%;
             height: auto;
+            padding-top: 4%;
         }
     }
     /* トップ画像のテキスト */
@@ -477,6 +476,34 @@ img {
      }
 }
 
+/* footer */
+.c-footer-info {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.7vw;
+    @include tb {
+        font-size: 2.3vw;
+    }
+    @include sp {
+        font-size: 5.3vw;
+    }
+}
+
+.c-footer-copyright {
+    
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2vw;
+    margin-top: 2%;
+    @include tb {
+        font-size: 1.7vw;
+    }
+    @include sp {
+        font-size: 3.7vw;
+    }
+    
+}
+
 /* 検索フォーム*/
 .c-form{
     display: flex;
@@ -551,20 +578,26 @@ img {
 /* aside */
 .c-menu {
     color: #303030;
-    font-size: 17px;
+    font-size: 1.3vw;
     font-family: 'M PLUS 1p', sans-serif;
     @include tb {
-        font-size: 20px;
+        font-size: 2.9vw;
         position: relative;
         left: 40px;
     }
+    @include sp {
+        font-size: 6.4vw;
+    }
     li {
-        font-size: 15px;
+        font-size: 1.0vw;
         list-style-type: none;
         @include tb {
-            font-size: 17px;
+            font-size: 2.4vw;
             position: relative;
             left: 60px;
+        }
+        @include sp {
+            font-size: 5.3vw;
         }
     }
 }
@@ -573,6 +606,9 @@ img {
     width: 100%;
     height: auto;
     position: relative;
+    @include sp {
+        display: none;
+    }
  
 }
 
@@ -589,14 +625,21 @@ img {
     @include tb {
         width: 100%;
     }
+    @include sp {
+        display: none;
+    }
     p {
         color: white;
         position: absolute;
         top: 30%;
         left: 5%;
+        font-size: 1.3vw;
         @include tb {
-            font-size: 14px;
+            font-size: 1.7vw;
             
+        }
+        @include sp {
+            display: none;
         }
 
     }
@@ -605,11 +648,14 @@ img {
         position: absolute;
         top: 5%;
         left: 5%;
+        font-size: 1.8vw;
         @include tb {
-            font-size: 30px;
+            font-size: 3.6vw;
         
         }
-
+        @include sp {
+            display: none;
+        }
     }
 
 }
@@ -619,6 +665,9 @@ img {
     z-index: 1;
     width: 100%;
     height: 100%;
+    @include sp {
+        display: none;
+    }
 }
 
 
@@ -629,7 +678,7 @@ img {
     overflow: hidden;
     padding-top: 41.8%;
     @include sp {
-        padding-top: 184.2%;
+        display: none;
     }
 }
 iframe{
@@ -638,6 +687,65 @@ iframe{
     left: 0;
     width: 100%;
     height: 100%;
+    @include sp {
+        display: none;
+    }
+}
+
+/* mapスマホサイズ */
+.l-map-sp {
+    display: none;
+}
+.p-map-sp {
+    display: none;
+}
+.c-maptext-sp {
+    display: none;
+}
+@include sp {
+    .l-map-sp {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .p-map-sp {
+        display: block;
+        width: 100%;
+        height: auto;
+        background-image: url(images/map-sp.jpg);
+        
+        padding-bottom: 55%;
+    }
+    .c-map-sp {
+        position: relative;
+    }
+    .c-maptext-sp {
+        display: block;
+        
+        margin-left: 4%;
+        margin-right: 4%;
+        padding-bottom: 4%;
+        h2 {
+            color: white;
+            font-size: 8.0vw;
+        }
+        p {
+            color: white;
+            font-size: 3.7vw;
+        }
+
+    }
+    .p-map-sp-wrapper {
+        
+        background-image: url(images/map-sp-wrapper.jpg);
+        
+        top: 0;
+        width: 100%;
+        height: auto;
+        padding-top: 25%;
+        background-color: #333333;
+        opacity: 0.7;
+    }
 }
 
 /* body((header+aside)+footer) */
