@@ -1,44 +1,13 @@
 @charset "UTF-8";
 /* foundation */
+@import url(/Users/satoutakaaki/Desktop/RaiseTech-Git/css/foundation/base.css);
+/* layout */
+/* l-body系 */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-h1 {
-  font-size: 3.33vw;
-  font-family: 'Roboto', sans-serif;
-}
-
-@media (max-width: 834px) {
-  h1 {
-    font-size: 4.80vw;
-  }
-}
-
-@media (max-width: 375px) {
-  h1 {
-    font-size: 10.67vw;
-  }
-}
-
-h2 {
-  font-family: 'Roboto', sans-serif;
-}
-
-h3 {
-  font-family: 'M PLUS 1p', sans-serif;
-}
-
-p {
-  font-family: 'M PLUS 1p', sans-serif;
-}
-
-img {
-  height: auto;
-}
-
-/* layout */
 .l-body {
   width: 100%;
   height: auto;
@@ -156,6 +125,11 @@ img {
   padding-left: 18px;
 }
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /* トップ画像② */
 .l-header-top-image {
   padding-bottom: 10%;
@@ -165,6 +139,11 @@ img {
   .l-header-top-image {
     padding-top: 45%;
   }
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* テイクアウトとイートインの横並び画像の中に文字が入る③ */
@@ -290,7 +269,7 @@ img {
   width: 50%;
   height: auto;
   position: relative;
-  background-image: url(images/takeout-image.jpg);
+  background-image: url(../images/takeout-image.jpg);
   margin-left: 9%;
   margin-right: 3%;
 }
@@ -324,7 +303,7 @@ img {
   width: 50%;
   height: auto;
   position: relative;
-  background-image: url(images/eat-in-image.jpg);
+  background-image: url(../images/eat-in-image.jpg);
   margin-left: 3%;
   margin-right: 9%;
 }
@@ -658,16 +637,6 @@ img {
 }
 
 /* スライドメニュー */
-.slide-menu {
-  display: none;
-}
-
-@media (max-width: 834px) {
-  .slide-menu {
-    display: block;
-  }
-}
-
 /* aside */
 .c-menu {
   color: #303030;

@@ -1,0 +1,122 @@
+$tb: 834px; // タブレット用のブレイクポイント
+@mixin tb {
+    @media (max-width: ($tb)) {
+        @content;
+    }
+}
+
+$sp: 375px; // スマートフォン用のブレイクポイント
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
+*, *:before, *:after{ box-sizing: border-box;
+
+}
+
+.l-body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    @include tb {
+        
+        position: relative;
+        
+        .show {
+            position: relative;
+            
+
+            
+            
+        }
+    }
+    
+    &-header {
+        width: 80.885%;
+        background-color: #FFF7EF;
+        @include tb {
+            width: 100%;
+        }
+        /* 最上段からトップ画像の上まで① */
+            &-top {
+                display: flex;
+                justify-content: space-between;
+                @include tb {
+                    flex-direction: column;
+                    
+                    
+                }
+                
+            }
+            
+
+    }
+    &-aside {
+        width: 19.115%;
+        background-color: #F2EDE9;
+        display: block;
+        height: auto;
+        @include tb {
+                display: none;
+        }
+        @include sp {
+                display: none;
+        }
+            &-menu {
+               
+                position: relative;
+                top: 4%;
+                padding-left: 46px;
+                
+            }
+            &-hamburger {
+                position: relative;
+                top: 8%;
+                
+                padding-top: 30px;
+                padding-bottom: 50px;
+                padding-left: 46px;
+                    li {
+                        position: relative;
+                        top: 30px;
+                        
+                        padding-top: 23px;
+                        padding-left: 18px;
+                    }
+            }
+            &-side-menu {
+                position: relative;
+                top: 8%;
+                
+                padding-top: 30px;
+                padding-bottom: 50px;
+                padding-left: 46px;
+                    li {
+                        position: relative;
+                        top: 30px;
+                        
+                        padding-top: 23px;
+                        padding-left: 18px;
+                    }
+            }
+
+            &-drink-menu {
+                position: relative;
+                top: 8%;
+                
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 46px;
+                    li {
+                        position: relative;
+                        top: 30px;
+                        
+                        padding-top: 23px;
+                        padding-left: 18px;
+                    }
+            }
+        
+    }
+}

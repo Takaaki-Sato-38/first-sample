@@ -1,6 +1,11 @@
 /* foundation */
 
+@import "foundation/base";
 
+/* layout */
+/* l-body系 */
+@import "layout/_l-body";
+@import "layout/_l-header-top-image";
 
 $tb: 834px; // タブレット用のブレイクポイント
 @mixin tb {
@@ -22,145 +27,8 @@ $sp: 375px; // スマートフォン用のブレイクポイント
 
 
 
-h1 {
-    font-size: 3.33vw;
-    font-family: 'Roboto', sans-serif;
-    @include tb {        
-            font-size: 4.80vw;    
-    }
-    @include sp {
-        font-size: 10.67vw;
-    }
-}
 
-h2 {
-    font-family: 'Roboto', sans-serif;
-}
 
-h3 {
-    font-family: 'M PLUS 1p', sans-serif;
-}
-
-p {
-    font-family: 'M PLUS 1p', sans-serif;
-}
-
-img {
-    height: auto;
-}
-
-/* layout */
-.l-body {
-    width: 100%;
-    height: auto;
-    display: flex;
-    @include tb {
-        
-        position: relative;
-        
-        .show {
-            position: relative;
-            
-
-            
-            
-        }
-    }
-    
-    &-header {
-        width: 80.885%;
-        background-color: #FFF7EF;
-        @include tb {
-            width: 100%;
-        }
-        /* 最上段からトップ画像の上まで① */
-            &-top {
-                display: flex;
-                justify-content: space-between;
-                @include tb {
-                    flex-direction: column;
-                    
-                    
-                }
-                
-            }
-            
-
-    }
-    &-aside {
-        width: 19.115%;
-        background-color: #F2EDE9;
-        display: block;
-        height: auto;
-        @include tb {
-                display: none;
-        }
-        @include sp {
-                display: none;
-        }
-            &-menu {
-               
-                position: relative;
-                top: 4%;
-                padding-left: 46px;
-                
-            }
-            &-hamburger {
-                position: relative;
-                top: 8%;
-                
-                padding-top: 30px;
-                padding-bottom: 50px;
-                padding-left: 46px;
-                    li {
-                        position: relative;
-                        top: 30px;
-                        
-                        padding-top: 23px;
-                        padding-left: 18px;
-                    }
-            }
-            &-side-menu {
-                position: relative;
-                top: 8%;
-                
-                padding-top: 30px;
-                padding-bottom: 50px;
-                padding-left: 46px;
-                    li {
-                        position: relative;
-                        top: 30px;
-                        
-                        padding-top: 23px;
-                        padding-left: 18px;
-                    }
-            }
-
-            &-drink-menu {
-                position: relative;
-                top: 8%;
-                
-                padding-top: 30px;
-                padding-bottom: 30px;
-                padding-left: 46px;
-                    li {
-                        position: relative;
-                        top: 30px;
-                        
-                        padding-top: 23px;
-                        padding-left: 18px;
-                    }
-            }
-        
-    }
-}
-/* トップ画像② */
-.l-header-top-image {
-        padding-bottom: 10%;
-        @include sp {
-            padding-top: 45%;
-        }
-}
 
 /* テイクアウトとイートインの横並び画像の中に文字が入る③ */
 .l-header-choice {
@@ -280,7 +148,7 @@ img {
     width: 50%;
     height: auto;
     position: relative;
-    background-image: url(images/takeout-image.jpg);
+    background-image: url(../images/takeout-image.jpg);
     margin-left: 9%;
     margin-right: 3%;
     &-wrapper {
@@ -304,7 +172,7 @@ img {
     width: 50%;
     height: auto;
     position: relative;
-    background-image: url(images/eat-in-image.jpg);
+    background-image: url(../images/eat-in-image.jpg);
     margin-left: 3%;
     margin-right: 9%;
     &-wrapper {
@@ -568,12 +436,7 @@ img {
 }
 
 /* スライドメニュー */
-.slide-menu {
-    display: none;
-    @include tb {
-        display: block;
-    }
-}
+
 
 /* aside */
 .c-menu {

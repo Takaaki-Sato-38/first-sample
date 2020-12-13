@@ -1,0 +1,25 @@
+$tb: 834px; // タブレット用のブレイクポイント
+@mixin tb {
+    @media (max-width: ($tb)) {
+        @content;
+    }
+}
+
+$sp: 375px; // スマートフォン用のブレイクポイント
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
+*, *:before, *:after{ box-sizing: border-box;
+
+}
+
+/* トップ画像② */
+.l-header-top-image {
+    padding-bottom: 10%;
+    @include sp {
+        padding-top: 45%;
+    }
+}
