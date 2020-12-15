@@ -3,11 +3,6 @@
 @import url(/Users/satoutakaaki/Desktop/RaiseTech-Git/css/foundation/base.css);
 /* layout */
 /* l-body系 */
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .l-body {
   width: 100%;
   height: auto;
@@ -125,11 +120,7 @@
   padding-left: 18px;
 }
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
+/* top-image */
 /* トップ画像② */
 .l-header-top-image {
   padding-bottom: 10%;
@@ -141,11 +132,7 @@
   }
 }
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
+/*takeoutとeat-inの位置*/
 /* テイクアウトとイートインの横並び画像の中に文字が入る③ */
 .l-header-choice {
   display: -webkit-box;
@@ -170,6 +157,8 @@
   }
 }
 
+/* footer */
+/* footer */
 .l-footer {
   width: 100%;
   background-color: #9D8670;
@@ -179,6 +168,7 @@
   padding-bottom: 3%;
 }
 
+/* takeout-text */
 /* テイクアウト側に入れる文章のレイアウト */
 .l-takeout-text {
   width: 100%;
@@ -201,6 +191,7 @@
   margin-top: 2%;
 }
 
+/* eat-in-text */
 /* イートイン側に入れる文章のレイアウト */
 .l-eatin-text {
   width: 100%;
@@ -221,6 +212,37 @@
   left: 4%;
   width: 92%;
   margin-top: 2%;
+}
+
+/* map */
+/* Google マップに文字を重ねます④ */
+.l-map {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+/* tbとspのside menu レイアウト */
+/* tbとspのサイドメニューのレイアウト */
+.l-side-hamburger {
+  position: relative;
+  top: 40px;
+}
+
+.l-side-side-menu {
+  position: relative;
+  top: 60px;
+}
+
+.l-side-drink-menu {
+  position: relative;
+  top: 80px;
+}
+
+/* body((header+aside)+footer) wrapper */
+/* body((header+aside)+footer) */
+.wrapper {
+  position: relative;
 }
 
 /* project */
@@ -333,6 +355,7 @@
   }
 }
 
+/* sideのハンバーガーメニュー */
 /* サイド側のハンバーガーメニュー */
 .p-hamburger-menu {
   font-family: 'Roboto', sans-serif;
@@ -340,6 +363,7 @@
 }
 
 /* component */
+/* c-image系 */
 /* 画像にテキストを載せる */
 .c-image {
   width: 100%;
@@ -498,6 +522,7 @@
   }
 }
 
+/* takeoutとeat-inのテキスト */
 /* テイクアウトとイートインの中の文章 */
 .c-text-card {
   background-color: rgba(255, 255, 255, 0.8);
@@ -513,6 +538,7 @@
   padding: 5px;
 }
 
+/* footer */
 /* footer */
 .c-footer-info {
   text-align: center;
@@ -551,6 +577,7 @@
   }
 }
 
+/* 検索フォーム */
 /* 検索フォーム*/
 .c-form {
   display: -webkit-box;
@@ -636,8 +663,8 @@
   }
 }
 
-/* スライドメニュー */
-/* aside */
+/* サイドメニューの文字 */
+/* aside side-menu text */
 .c-menu {
   color: #303030;
   font-size: 1.3vw;
@@ -677,13 +704,7 @@
   }
 }
 
-/* Google マップに文字を重ねます④ */
-.l-map {
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-
+/* map */
 .c-maptext {
   display: block;
   position: absolute;
@@ -809,11 +830,7 @@ iframe {
   }
 }
 
-/* body((header+aside)+footer) */
-.wrapper {
-  position: relative;
-}
-
+/* tb sp のサイドメニュー */
 /* レスポンシブデザインサイドメニュー */
 .side-menu {
   display: none;
@@ -871,7 +888,7 @@ iframe {
     visibility: visible;
     color: rgba(255, 255, 255, 0.8);
   }
-  /* サイドメニュー ※リストのスタイルは省略 */
+  /* サイドメニュー */
   .side-menu {
     display: none;
     position: fixed;
@@ -889,19 +906,7 @@ iframe {
     right: 0;
     z-index: 101;
   }
-  .l-side-hamburger {
-    position: relative;
-    top: 40px;
-  }
-  .l-side-side-menu {
-    position: relative;
-    top: 60px;
-  }
-  .l-side-drink-menu {
-    position: relative;
-    top: 80px;
-  }
-  /* 開閉用ボタン ※ボタンの細かいスタイルは省略 */
+  /* 開閉用ボタン */
   .c-side-menu-btn {
     display: block;
     position: fixed;
@@ -945,7 +950,6 @@ iframe {
     transition: all .5s ease;
     z-index: 2;
   }
-  /* メインコンテンツ内のスタイル ※デザインに併せて適当に */
   /* サイドメニューオープン */
   .l-body .side-open,
   .side-open .overlay {
