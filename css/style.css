@@ -370,6 +370,7 @@
   position: relative;
   /* トップ画像 */
   /* トップ画像のテキスト */
+  /* archive top画像の最下面 */
   /* テイクアウト側 */
   /* イートイン側 */
 }
@@ -431,6 +432,134 @@
     top: 55%;
     font-size: 9.8vw;
     left: 7%;
+  }
+}
+
+.c-image-archive-top {
+  width: 100%;
+  height: auto;
+  margin-top: 4%;
+  z-index: 2;
+  position: absolute;
+  background-image: url(../images/archive-header-top.jpg);
+  padding-top: 20%;
+}
+
+@media (max-width: 834px) {
+  .c-image-archive-top {
+    margin-top: 24%;
+  }
+}
+
+@media (max-width: 375px) {
+  .c-image-archive-top {
+    display: none;
+  }
+}
+
+.c-image-top-sp {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .c-image-top-sp {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 4%;
+  }
+}
+
+.c-image-archive-text-top-wrapper {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-image-archive-text-top {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: #ffffff;
+  z-index: 3;
+  font-size: 3.1vw;
+}
+
+@media (max-width: 834px) {
+  .c-image-archive-text-top {
+    font-size: 4.32vw;
+    top: 45%;
+  }
+}
+
+@media (max-width: 375px) {
+  .c-image-archive-text-top {
+    top: 55%;
+    font-size: 9.8vw;
+    left: 7%;
+  }
+}
+
+.c-image-archive-text-top-s {
+  font-size: 0.8vw;
+  left: 24%;
+  position: absolute;
+  top: 50%;
+  color: #ffffff;
+  z-index: 3;
+}
+
+@media (max-width: 834px) {
+  .c-image-archive-text-top-s {
+    font-size: 4.32vw;
+    top: 45%;
+  }
+}
+
+@media (max-width: 375px) {
+  .c-image-archive-text-top-s {
+    top: 55%;
+    font-size: 9.8vw;
+    left: 7%;
+  }
+}
+
+.c-image-archive-top-background {
+  width: 100%;
+  height: auto;
+  margin-top: 4%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/archive-header-background-image.png);
+  padding-top: 20%;
+}
+
+@media (max-width: 834px) {
+  .c-image-archive-top-background {
+    margin-top: 24%;
+  }
+}
+
+@media (max-width: 375px) {
+  .c-image-archive-top-background {
+    display: none;
+  }
+}
+
+.c-image-archive-top-background-sp {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .c-image-archive-top-background-sp {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 4%;
   }
 }
 

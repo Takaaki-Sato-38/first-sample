@@ -49,6 +49,105 @@
         }
 
     }
+    /* archive top画像の最下面 */
+
+    &-archive-top {
+        width: 100%;
+        height: auto;
+        margin-top: 4%;
+        z-index: 2;
+        position: absolute;
+        background-image: url(../images/archive-header-top.jpg);
+        padding-top: 20%;
+        @include tb {
+            margin-top: 24%;
+        }
+        @include sp {
+            display: none;
+        }
+    }
+    &-top-sp {
+        display: none;
+        @include sp {
+            display: block;
+            width: 100%;
+            height: auto;
+            padding-top: 4%;
+        }
+    }
+
+    
+
+    &-archive-text-top-wrapper {
+        height: 100%;
+        background: rgba(255,255,255,0.5);
+        display: flex;
+    }
+
+    &-archive-text-top {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        color: #ffffff;
+        z-index: 3;
+        font-size: 3.1vw;
+        @include tb {
+                font-size: 4.32vw;
+                top: 45%;        
+        }
+        @include sp {
+            top: 55%;
+            font-size: 9.8vw;
+            left: 7%;
+        }
+    }
+
+    &-archive-text-top-s {
+        font-size: 0.8vw;
+        left: 24%;
+        position: absolute;
+        top: 50%;
+        color: #ffffff;
+        z-index: 3;
+        @include tb {
+                font-size: 4.32vw;
+                top: 45%;        
+        }
+        @include sp {
+            top: 55%;
+            font-size: 9.8vw;
+            left: 7%;
+        }
+    }
+
+
+    &-archive-top-background {
+        width: 100%;
+        height: auto;
+        margin-top: 4%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(../images/archive-header-background-image.png);
+        padding-top: 20%;
+            @include tb {
+                margin-top: 24%;
+            }
+            @include sp {
+                display: none;
+            }
+        }
+        &-archive-top-background-sp {
+            display: none;
+            @include sp {
+                display: block;
+                width: 100%;
+                height: auto;
+                padding-top: 4%;
+            }
+        }
+    
 
     /* テイクアウト側 */
     &-takeout {
@@ -125,3 +224,6 @@
 
     }
 }
+
+
+
