@@ -51,14 +51,21 @@
     }
     /* archive top画像の最下面 */
 
-    &-archive-top {
+    &-archive {
         width: 100%;
-        height: auto;
-        margin-top: 4%;
-        z-index: 2;
-        position: absolute;
-        background-image: url(../images/archive-header-top.jpg);
-        padding-top: 20%;
+        position: relative;
+        top: -8%;
+        @include sp {
+        width: auto;
+        }
+    }
+
+    &-archive-top {
+        
+        height: 0;
+        overflow: hidden;
+        
+        padding-top: 15.4%;
         @include tb {
             margin-top: 24%;
         }
@@ -76,12 +83,22 @@
         }
     }
 
-    
+    &-archive-top-image {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
 
     &-archive-text-top-wrapper {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        background-color: rgba(0,0,0,0.4);
+        width: 100%;
         height: 100%;
-        background: rgba(255,255,255,0.5);
-        display: flex;
+        
+        left: 0;
     }
 
     &-archive-text-top {
@@ -89,7 +106,7 @@
         top: 40%;
         left: 10%;
         color: #ffffff;
-        z-index: 3;
+        z-index: 5;
         font-size: 3.1vw;
         @include tb {
                 font-size: 4.32vw;
@@ -108,7 +125,7 @@
         position: absolute;
         top: 50%;
         color: #ffffff;
-        z-index: 3;
+        z-index: 5;
         @include tb {
                 font-size: 4.32vw;
                 top: 45%;        
