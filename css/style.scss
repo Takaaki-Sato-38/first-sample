@@ -90,17 +90,32 @@
     height: auto;
     color: white;
     display: flex;
+    @include sp {
+        display: block;
+    
+    }
 }
 
 .c-archive-center-card-image {
     background-image: url("../images/archive-hamburger-image.jpg");
     width: 50%;
+    background-size: cover;
+    @include sp {
+        width: 100%;
+        padding-top: 100%;
+    }
 }
 
 
 
 .c-archive-center-card-description {
     width: 50%;
+    @include sp {
+        width: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-bottom: 6%;
+    }
 
 }
 
@@ -115,6 +130,7 @@
         }
         @include sp {
             font-size: 5.3vw;
+            padding-top: 2%;
         }
 }
 
@@ -156,4 +172,117 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+/* ページネーション */
+.c-archive-pagination {
+    display: flex;
+    color: #707070;
+    align-items: center;
+    font-size: 1.0vw;
+    justify-content: center;
+    @include tb {
+    font-size: 1.9vw;
+    }
+    @include sp {
+    font-size: 4.3vw;
+    justify-content: space-around;    
+    }
+}
+
+.c-archive-pagination-current {
+    display: block;
+    padding-bottom: 1%;
+    @include sp {
+        display: none;
+    }
+}
+
+.c-archive-pagination {
+    &-prev {
+        display: block;
+        margin-left: 4%;
+        padding-bottom: 1%;
+        @include tb {
+            margin-left: 2%;
+            
+        }
+        @include sp {
+            display: none;
+        }
+    }
+    &-next {
+        display: block;
+        margin-left: 4%;
+        padding-bottom: 1%;
+        @include tb {
+            margin-left: 2%;
+            
+        }
+        @include sp {
+            display: none;
+        }
+    }
+    &-prev-font {
+        display: none;
+        @include sp {
+            display: block;
+        }
+    }
+    &-next-font {
+        display: none;
+        @include sp {
+            display: block;
+        }
+    }
+}
+
+.c-archive-pagination-number {
+
+    &-black {
+        background-color: #3C2B1C;
+        width: 2.3vw;
+        height: 2.3vw;
+        color: white;
+        display: block;
+        margin-left: 4%;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        margin-bottom: 1%;
+        border: 1px solid #707070;
+        @include tb {
+            margin-left: 2%;
+            width: auto;
+            height: auto;
+            padding-bottom: 0px;
+        }
+        @include sp {
+            display: none;
+        }
+
+    }
+    &-white {
+        background-color: #FFFDFA;
+        width: 2.3vw;
+        height: 2.3vw;
+        display: block;
+        margin-left: 4%;
+
+        padding-top: 0.5%;
+        border: 1px solid #707070;
+        margin-bottom: 1%;
+        padding-left: 1%;
+        padding-right: 1%;  
+        @include tb {
+            margin-left: 2%;
+            width: auto;
+            height: auto;
+        }
+        @include sp {
+            display: none;
+        }
+
+    }
 }
