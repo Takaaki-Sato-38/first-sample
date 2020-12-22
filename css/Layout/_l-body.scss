@@ -104,3 +104,42 @@
         
     }
 }
+
+/* archive-page */
+
+.l-archive-body-header {
+    width: 80.885%;
+        background-color: #FFFDFA;
+        
+        @include tb {
+            width: 100%;
+        }
+        /* 最上段からトップ画像の上まで① */
+            &-top {
+                display: flex;
+                justify-content: space-between;
+                background-color: #FFF7EF;
+                width: 100%;
+                height: auto;
+                padding-bottom: 8%;
+                width: 100%;
+                height: auto;
+
+                @include tb {
+                    flex-direction: column;
+                    padding-bottom: 36%;
+                    margin-bottom: 10%;
+                    
+                    
+                }
+                @include sp {
+                    padding-bottom: 60%;
+                    margin-bottom: 0;
+                }
+                
+            }
+
+
+
+
+}

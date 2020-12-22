@@ -54,14 +54,13 @@
     &-archive {
         width: 100%;
         position: relative;
-        top: -4%;
+        top: -10%;
         @include tb {
-            top: 4%;
-            margin-bottom: 20%;
+            padding-bottom: 22%;
         }
         @include sp {
         width: auto;
-        top: -1%;
+        top: -8%;
         }
     }
 

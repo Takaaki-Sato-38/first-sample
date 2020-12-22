@@ -120,6 +120,52 @@
   padding-left: 18px;
 }
 
+/* archive-page */
+.l-archive-body-header {
+  width: 80.885%;
+  background-color: #FFFDFA;
+  /* 最上段からトップ画像の上まで① */
+}
+
+@media (max-width: 834px) {
+  .l-archive-body-header {
+    width: 100%;
+  }
+}
+
+.l-archive-body-header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #FFF7EF;
+  width: 100%;
+  height: auto;
+  padding-bottom: 8%;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 834px) {
+  .l-archive-body-header-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 36%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 375px) {
+  .l-archive-body-header-top {
+    padding-bottom: 60%;
+    margin-bottom: 0;
+  }
+}
+
 /* top-image */
 /* トップ画像② */
 .l-header-top-image {
@@ -438,20 +484,19 @@
 .c-image-archive {
   width: 100%;
   position: relative;
-  top: -4%;
+  top: -10%;
 }
 
 @media (max-width: 834px) {
   .c-image-archive {
-    top: 4%;
-    margin-bottom: 20%;
+    padding-bottom: 22%;
   }
 }
 
 @media (max-width: 375px) {
   .c-image-archive {
     width: auto;
-    top: -1%;
+    top: -8%;
   }
 }
 
@@ -1076,9 +1121,10 @@ iframe {
   }
 }
 
+/* archiveの文章、カードなどのメイン部分 */
 /* メインの文章 */
 .c-archive-center-wrapper {
-  margin-top: 12%;
+  margin-top: 8%;
   margin-left: 6.4%;
   margin-right: 6.4%;
   margin-bottom: 8%;
@@ -1086,13 +1132,13 @@ iframe {
 
 @media (max-width: 834px) {
   .c-archive-center-wrapper {
-    margin-top: 38%;
+    margin-top: 12%;
   }
 }
 
 @media (max-width: 375px) {
   .c-archive-center-wrapper {
-    margin-top: 70%;
+    margin-top: 8%;
   }
 }
 
@@ -1238,6 +1284,7 @@ iframe {
   display: block;
 }
 
+/* ページネーション */
 /* ページネーション */
 .c-archive-pagination {
   display: -webkit-box;
