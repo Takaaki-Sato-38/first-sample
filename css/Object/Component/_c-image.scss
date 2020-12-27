@@ -155,7 +155,7 @@
         @include tb {
             padding-bottom: 22%;
             top: -200px;
-            height: 180px;
+            height: 283px;
         }
         @include sp {
         width: auto;
@@ -188,7 +188,7 @@
 
     &-archive-search-text-top-wrapper-2 {
         display: flex;
-        align-items: baseline;
+        align-items: center;
     }
 
     &-archive-search-text-top {
