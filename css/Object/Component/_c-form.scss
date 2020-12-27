@@ -60,3 +60,15 @@
         left: 0;
     }
 }
+
+.c-archive-search-form {
+    display: flex;
+    margin-top: 6%;
+    
+    @include tb {
+        margin-top: 60px;
+    }	
+    @include sp {
+        margin-top: 90px;
+    }
+}

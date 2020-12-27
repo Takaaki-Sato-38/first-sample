@@ -125,3 +125,19 @@
     margin-right: auto;
     display: block;
 }
+
+
+/* archive-search メインの文章 */
+.c-archive-search-center-wrapper {
+    margin-top: 4%;
+    margin-left: 6.4%;
+    margin-right: 6.4%;
+    margin-bottom: 8%;
+    @include tb {
+        margin-top: -40px;
+    }
+
+    @include sp {
+        margin-top: 8%;
+    }
+}
