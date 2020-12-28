@@ -187,9 +187,8 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #FFF7EF;
-  padding-bottom: 16%;
   width: 100%;
-  height: 200px;
+  height: 217px;
 }
 
 @media (max-width: 834px) {
@@ -198,15 +197,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 36%;
-    height: 280px;
-  }
-}
-
-@media (max-width: 375px) {
-  .l-archive-search-body-header-top {
-    padding-bottom: 60%;
-    margin-bottom: 0;
   }
 }
 
@@ -644,14 +634,12 @@
 
 .c-image-archive-search {
   width: 100%;
+  height: 239px;
   position: relative;
-  top: -8%;
 }
 
 @media (max-width: 834px) {
   .c-image-archive-search {
-    padding-bottom: 22%;
-    top: -200px;
     height: 283px;
   }
 }
@@ -659,14 +647,12 @@
 @media (max-width: 375px) {
   .c-image-archive-search {
     width: auto;
-    top: -250px;
   }
 }
 
 .c-image-archive-search-top {
   height: 0;
   overflow: hidden;
-  padding-top: 15.4%;
 }
 
 .c-image-archive-search-text-top-wrapper {
@@ -692,12 +678,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
 }
 
 .c-image-archive-search-text-top {
-  position: absolute;
-  top: 40%;
-  left: 10%;
   color: #ffffff;
   z-index: 5;
   font-size: 3.1vw;
@@ -720,11 +711,9 @@
 
 .c-image-archive-search-text-top-s {
   font-size: 0.8vw;
-  left: 24%;
-  position: absolute;
-  top: 50%;
   color: #ffffff;
   z-index: 5;
+  margin-left: 2%;
 }
 
 @media (max-width: 834px) {
@@ -1454,18 +1443,6 @@ iframe {
   margin-left: 6.4%;
   margin-right: 6.4%;
   margin-bottom: 8%;
-}
-
-@media (max-width: 834px) {
-  .c-archive-search-center-wrapper {
-    margin-top: -40px;
-  }
-}
-
-@media (max-width: 375px) {
-  .c-archive-search-center-wrapper {
-    margin-top: 8%;
-  }
 }
 
 /* ページネーション */

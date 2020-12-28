@@ -150,16 +150,14 @@
     /* archive-search top画像の最下面 */
     &-archive-search {
         width: 100%;
+        height: 239px;
         position: relative;
-        top: -8%;
         @include tb {
-            padding-bottom: 22%;
-            top: -200px;
             height: 283px;
         }
         @include sp {
         width: auto;
-        top: -250px;
+        
         }
     }
 
@@ -168,7 +166,7 @@
         height: 0;
         overflow: hidden;
         
-        padding-top: 15.4%;
+        
 
     }
 
@@ -189,12 +187,17 @@
     &-archive-search-text-top-wrapper-2 {
         display: flex;
         align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(0,-50%);
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
     }
 
     &-archive-search-text-top {
-        position: absolute;
-        top: 40%;
-        left: 10%;
+        
         color: #ffffff;
         z-index: 5;
         font-size: 3.1vw;
@@ -211,11 +214,9 @@
 
     &-archive-search-text-top-s {
         font-size: 0.8vw;
-        left: 24%;
-        position: absolute;
-        top: 50%;
         color: #ffffff;
         z-index: 5;
+        margin-left: 2%;
         @include tb {
                 font-size: 1.92vw;
                 left: 40%;       
