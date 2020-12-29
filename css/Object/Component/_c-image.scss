@@ -194,37 +194,45 @@
         vertical-align: middle;
         width: 100%;
         height: auto;
+        @include sp {
+            display: flex;
+            flex-direction: column;
+            align-items: normal;
+            top: 103px;
+            
+            transform: translate(0,0);
+            vertical-align: auto;
+        }
     }
 
     &-archive-search-text-top {
         
         color: #ffffff;
         z-index: 5;
-        font-size: 3.1vw;
+        font-size: 60px;
         @include tb {
-                font-size: 7.19vw;
-                top: 32%;        
+                
+              
         }
         @include sp {
-            top: 35%;
-            font-size: 9.6vw;
-            left: 7%;
+
+            font-size: 36px;
+            margin-bottom: 9px;
+
         }
     }
 
     &-archive-search-text-top-s {
-        font-size: 0.8vw;
+        font-size: 16px;
         color: #ffffff;
         z-index: 5;
         margin-left: 2%;
         @include tb {
-                font-size: 1.92vw;
-                left: 40%;       
+                
+              
         }
         @include sp {
-            top: 53%;
-            font-size: 4.3vw;
-            left: 7%;
+            margin-left: 0;
         }
     }
 
