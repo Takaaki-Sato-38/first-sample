@@ -3,8 +3,11 @@
     display: flex;
     color: #707070;
     align-items: center;
-    font-size: 1.0vw;
+    font-size: 16px;
     justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    vertical-align: middle;
     @include tb {
     font-size: 1.9vw;
     }
@@ -25,7 +28,7 @@
 .c-archive-pagination {
     &-prev {
         display: block;
-        margin-left: 4%;
+        margin-left: 1%;
         padding-bottom: 1%;
         @include tb {
             margin-left: 2%;
@@ -37,7 +40,7 @@
     }
     &-next {
         display: block;
-        margin-left: 4%;
+        margin-left: 1%;
         padding-bottom: 1%;
         @include tb {
             margin-left: 2%;
@@ -65,13 +68,13 @@
 
     &-black {
         background-color: #3C2B1C;
-        width: 2.3vw;
-        height: 2.3vw;
+        width: 3vw;
+        height: 3vw;
         color: white;
         display: block;
-        margin-left: 4%;
-        padding-left: 1%;
-        padding-right: 1%;
+        margin-left: 1%;
+        padding-left: 1.1%;
+        
         padding-top: 0.5%;
         padding-bottom: 0.5%;
         margin-bottom: 1%;
@@ -89,16 +92,16 @@
     }
     &-white {
         background-color: #FFFDFA;
-        width: 2.3vw;
-        height: 2.3vw;
+        width: 3vw;
+        height: 3vw;
         display: block;
-        margin-left: 4%;
+        margin-left: 1%;
 
         padding-top: 0.5%;
         border: 1px solid #707070;
         margin-bottom: 1%;
-        padding-left: 1%;
-        padding-right: 1%;  
+        padding-left: 1.1%;
+          
         @include tb {
             margin-left: 2%;
             width: auto;

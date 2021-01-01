@@ -14,22 +14,22 @@
 }
 
 .c-archive-center-title {
-    font-size: 2.3vw;
+    font-size: 36px;
     @include tb {
-        font-size: 4.3vw;
+    
     }
     @include sp {
-        font-size: 7.5vw;
+        font-size: 28px;
     }
 }
 
 .c-archive-center-text {
-    font-size: 1.0vw;
+    font-size: 16px;
     @include tb {
-        font-size: 1.9vw;
+
     }
     @include sp {
-        font-size: 4.2vw;
+
     }    
 }
 
@@ -78,10 +78,10 @@
     margin-top: 6%;
     margin-bottom: 6%;
         @include tb {
-            font-size: 2.4vw;
+            font-size: 20px;
         }
         @include sp {
-            font-size: 5.3vw;
+            font-size: 20px;
             padding-top: 2%;
         }
 }
@@ -94,13 +94,14 @@
         margin-bottom: 4%;
         
         @include tb {
-            font-size: 1.9vw;
+            font-size: 16px;
         }
         @include sp {
-            font-size: 4.3vw;
+            font-size: 16px;
         }
     }
     p {
+        font-size: 16px;
         font-weight: 400;
         margin-left: 5%;
         margin-right: 6%;
