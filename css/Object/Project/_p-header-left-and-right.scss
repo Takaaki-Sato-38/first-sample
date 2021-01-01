@@ -30,3 +30,38 @@
     }
 
 }  
+
+/* archive-search */
+
+.p-archive-search-header-left h1 {
+    position: absolute;
+    top: 80px;
+    left: 2%;
+    
+    
+    @include tb {
+            
+        left: 40%;
+    }
+    @include sp {
+        
+        left: 22%;
+    }
+        
+}
+.p-archive-search-header-right {
+    
+    margin-top: 62px;
+    margin-right: 3%;
+    @include tb {
+        position: absolute;
+        left: 18%;
+        margin-top: 80px;
+    }
+    @include sp {
+        margin-top: 60px;
+        left: 9%;
+    }
+    
+    
+}
