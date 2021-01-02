@@ -11,9 +11,9 @@
     &-top {
         width: 100%;
         height: auto;
-        margin-top: 4%;
+        
         @include tb {
-            margin-top: 24%;
+        
         }
         @include sp {
             display: none;
@@ -25,7 +25,7 @@
             display: block;
             width: 100%;
             height: auto;
-            padding-top: 4%;
+            
         }
     }
     /* トップ画像のテキスト */
@@ -39,11 +39,10 @@
    
         @include tb {
                 font-size: 4.32vw;
-                top: 45%;
         
         }
         @include sp {
-            top: 55%;
+        
             font-size: 9.8vw;
             left: 7%;
         }
