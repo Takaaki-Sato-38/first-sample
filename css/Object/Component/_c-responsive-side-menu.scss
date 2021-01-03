@@ -77,17 +77,20 @@
   /* 開閉用ボタン */
   .c-side-menu-btn {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 20px;
-    right: 5px;
+    left: 80%;
     width: 55px;
     height: 40px;
-    padding: 5px;
-    background-color: #fff;
+    
+    font-size: 4.1vw;
+    
     cursor: pointer;
     z-index: 102;
-    border-radius: 10px;
-    border: 1px solid #707070;
+    @include sp {
+      font-size: 5.3vw;
+    }
+
   }
   .c-side-menu-btn.show {
       display: none;
@@ -102,7 +105,7 @@
     width: 40px;
     height: 40px;
     padding: 5px;
-    background-color: #ccc;
+    background-color: #d3c9c2;
     cursor: pointer;
     z-index: 4;
   }
