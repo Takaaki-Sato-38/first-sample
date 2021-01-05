@@ -50,5 +50,28 @@
 /* archiveの文章、カードなどのメイン部分 */
 @import "object/component/c-archive-center";
 /* ページネーション */
-@import "object/component/c-archive-pagination"
+@import "object/component/c-archive-pagination";
 
+
+.c-single-maintext-wrapper {
+    color: #3C2A10;
+
+    h2 {
+        font-size: 34px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    h6 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+}

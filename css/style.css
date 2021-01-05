@@ -1589,4 +1589,32 @@ iframe {
     display: none;
   }
 }
+
+.c-single-maintext-wrapper {
+  color: #3C2A10;
+}
+
+.c-single-maintext-wrapper h2 {
+  font-size: 34px;
+}
+
+.c-single-maintext-wrapper h3 {
+  font-size: 20px;
+}
+
+.c-single-maintext-wrapper h4 {
+  font-size: 20px;
+}
+
+.c-single-maintext-wrapper h5 {
+  font-size: 20px;
+}
+
+.c-single-maintext-wrapper h6 {
+  font-size: 20px;
+}
+
+.c-single-maintext-wrapper p {
+  font-size: 16px;
+}
 /*# sourceMappingURL=style.css.map */
