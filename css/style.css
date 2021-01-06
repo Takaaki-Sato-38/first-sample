@@ -485,6 +485,7 @@
   /* トップ画像のテキスト */
   /* archive top画像の最下面 */
   /* archive-search top画像の最下面 */
+  /* single */
   /* テイクアウト側 */
   /* イートイン側 */
 }
@@ -753,6 +754,94 @@
 @media (max-width: 375px) {
   .c-image-archive-search-text-top-s {
     margin-left: 0;
+  }
+}
+
+.c-image-single {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+@media (max-width: 375px) {
+  .c-image-single {
+    width: auto;
+    height: 225px;
+  }
+}
+
+.c-image-single-text-top-wrapper {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+@media (max-width: 375px) {
+  .c-image-single-text-top-wrapper {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.c-image-single-text-top-wrapper-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  vertical-align: middle;
+  width: 91%;
+  height: auto;
+}
+
+@media (max-width: 375px) {
+  .c-image-single-text-top-wrapper-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    top: 90px;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    left: 4%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.c-image-single-text-top {
+  color: #ffffff;
+  z-index: 5;
+  font-size: 36px;
+}
+
+@media (max-width: 375px) {
+  .c-image-single-text-top {
+    font-size: 9.6vw;
+  }
+}
+
+.c-image-single-text-top-s {
+  font-size: 36px;
+  color: #ffffff;
+  z-index: 5;
+  margin-left: 2%;
+}
+
+@media (max-width: 375px) {
+  .c-image-single-text-top-s {
+    font-size: 9.6vw;
   }
 }
 
@@ -1590,31 +1679,161 @@ iframe {
   }
 }
 
+/* 見出し */
 .c-single-maintext-wrapper {
   color: #3C2A10;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-.c-single-maintext-wrapper h2 {
-  font-size: 34px;
+@media (max-width: 834px) {
+  .c-single-maintext-wrapper {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 }
 
-.c-single-maintext-wrapper h3 {
+@media (max-width: 375px) {
+  .c-single-maintext-wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.c-single-maintext-h2 {
+  font-size: 36px;
+  margin-top: 67px;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 375px) {
+  .c-single-maintext-h2 {
+    margin-top: 35px;
+    margin-bottom: 33px;
+  }
+}
+
+.c-single-maintext-h3 {
+  font-size: 28px;
+  margin-top: 65px;
+  margin-bottom: 66px;
+}
+
+@media (max-width: 375px) {
+  .c-single-maintext-h3 {
+    margin-top: 39px;
+    margin-bottom: 36px;
+  }
+}
+
+.c-single-maintext-h3-second {
   font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 64px;
 }
 
-.c-single-maintext-wrapper h4 {
+@media (max-width: 375px) {
+  .c-single-maintext-h3-second {
+    margin-bottom: 34px;
+  }
+}
+
+.c-single-maintext-h4 {
   font-size: 20px;
+  margin-bottom: 64px;
 }
 
-.c-single-maintext-wrapper h5 {
+@media (max-width: 375px) {
+  .c-single-maintext-h4 {
+    margin-bottom: 34px;
+  }
+}
+
+.c-single-maintext-h4-second {
   font-size: 20px;
+  margin-bottom: 64px;
 }
 
-.c-single-maintext-wrapper h6 {
+@media (max-width: 375px) {
+  .c-single-maintext-h4-second {
+    margin-bottom: 34px;
+  }
+}
+
+.c-single-maintext-h5 {
   font-size: 20px;
+  margin-bottom: 64px;
 }
 
-.c-single-maintext-wrapper p {
+@media (max-width: 375px) {
+  .c-single-maintext-h5 {
+    margin-bottom: 34px;
+  }
+}
+
+.c-single-maintext-h6 {
+  font-size: 20px;
+  margin-bottom: 61px;
+}
+
+@media (max-width: 375px) {
+  .c-single-maintext-h6 {
+    margin-bottom: 31px;
+  }
+}
+
+.c-single-maintext-p {
   font-size: 16px;
+}
+
+/* 本文 */
+.c-single-quote-wrapper {
+  background-color: #F5F5F5;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 834px) {
+  .c-single-quote-wrapper {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 375px) {
+  .c-single-quote-wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.c-single-quote-text {
+  padding-top: 50px;
+  margin-left: 50px;
+  margin-right: 56px;
+  margin-bottom: 62px;
+}
+
+@media (max-width: 375px) {
+  .c-single-quote-text {
+    padding-top: 30px;
+    margin-left: 20px;
+    margin-right: 16px;
+    margin-bottom: 32px;
+  }
+}
+
+.c-single-quote-source {
+  margin-left: 50px;
+  padding-bottom: 51px;
+}
+
+@media (max-width: 375px) {
+  .c-single-quote-source {
+    margin-left: 20px;
+    padding-bottom: 31px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
