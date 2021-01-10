@@ -1836,4 +1836,111 @@ iframe {
     padding-bottom: 31px;
   }
 }
+
+/* ハンバーガー写真 */
+.c-single-hamburger-image {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+@media (max-width: 834px) {
+  .c-single-hamburger-image {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 375px) {
+  .c-single-hamburger-image {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.c-single-big-hamburger {
+  margin-bottom: 60px;
+  width: 100%;
+  height: auto;
+}
+
+.c-single-middle-hamburger-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.c-single-middle-hamburger-wrapper-reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.c-single-middle-hamburger-image {
+  width: 43%;
+  height: 100%;
+}
+
+.c-single-middle-hamburger-text {
+  margin-left: 40px;
+  font-size: 16px;
+}
+
+.c-single-middle-hamburger-text-reverse {
+  margin-right: 40px;
+  font-size: 16px;
+}
+
+.c-single-middle-hamburger-center {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+.c-single-little-hamburger-wrapper {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 2%;
+  -ms-grid-columns: (minmax(100px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(100px, 1fr));
+}
+
+@media (max-width: 375px) {
+  .c-single-little-hamburger-wrapper {
+    -ms-grid-columns: (minmax(100px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+}
+
+.c-single-little-hamburger-image {
+  width: 100%;
+  height: auto;
+}
+
+.c-single-little-hamburger-image img {
+  width: 100%;
+  height: auto;
+}
+
+.c-single-list-wrapper {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+@media (max-width: 834px) {
+  .c-single-list-wrapper {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 375px) {
+  .c-single-list-wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
