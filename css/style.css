@@ -70,14 +70,11 @@
 }
 
 .l-body-aside-menu {
-  position: relative;
-  top: 4%;
+  margin-top: 30px;
   padding-left: 46px;
 }
 
 .l-body-aside-hamburger {
-  position: relative;
-  top: 8%;
   padding-top: 30px;
   padding-bottom: 50px;
   padding-left: 46px;
@@ -91,8 +88,6 @@
 }
 
 .l-body-aside-side-menu {
-  position: relative;
-  top: 8%;
   padding-top: 30px;
   padding-bottom: 50px;
   padding-left: 46px;
@@ -106,8 +101,6 @@
 }
 
 .l-body-aside-drink-menu {
-  position: relative;
-  top: 8%;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 46px;
@@ -1742,6 +1735,7 @@ iframe {
   }
 }
 
+/* シングルページの見出し・本文 */
 /* 見出し */
 .c-single-maintext-wrapper {
   color: #3C2A10;
@@ -1900,6 +1894,7 @@ iframe {
   }
 }
 
+/* シングルページのハンバーガー写真 */
 /* ハンバーガー写真 */
 .c-single-hamburger-image {
   margin-left: 100px;
@@ -2012,6 +2007,7 @@ iframe {
   height: auto;
 }
 
+/* シングルページのlist code table button bottom-text */
 /* list表示 */
 .c-single-list-wrapper {
   margin-left: 100px;
