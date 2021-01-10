@@ -1943,4 +1943,63 @@ iframe {
     margin-right: 20px;
   }
 }
+
+.c-single-list {
+  margin-left: 50px;
+  list-style: none;
+  margin-top: 63px;
+  margin-bottom: 20px;
+}
+
+.c-single-list-2 {
+  margin-left: 68px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.c-single-list-3 {
+  margin-left: 50px;
+  list-style: none;
+  margin-bottom: 60px;
+}
+
+.c-single-list-4 {
+  margin-left: 50px;
+  list-style: none;
+  margin-bottom: 22px;
+}
+
+.c-single-list-5 {
+  margin-left: 68px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.c-single-list-6 {
+  margin-left: 50px;
+  list-style: none;
+  margin-bottom: 59px;
+}
+
+.c-single-html-wrapper {
+  background-color: #F5F5F5;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 834px) {
+  .c-single-html-wrapper {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 375px) {
+  .c-single-html-wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
