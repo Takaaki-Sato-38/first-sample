@@ -1211,7 +1211,7 @@
 
 @media (max-width: 375px) {
   .c-maptext {
-    height: 50%;
+    height: 100%;
   }
 }
 
@@ -1232,7 +1232,7 @@
 
 @media (max-width: 375px) {
   .c-maptext p {
-    font-size: 3.7vw;
+    font-size: 14px;
   }
 }
 
